@@ -37,5 +37,40 @@
 </details>
 
 ---
+### KRİTİK HESAPLAMA VE SINAV SENARYOLARI
+
+**Senaryo 1: Kütle Denkliği ve Titrasyon Analizi**
+**Soru:** Ayırma hunisinde dengeye ulaşan sistemin alt fazından 1 mL numune alınmış ve kütlesi 1.45 g olarak ölçülmüştür. Bu numune 1 M NaOH ile titre edildiğinde dönüm noktasına ulaşmak için 2.3 mL NaOH harcanmıştır. Alt fazdaki asetik asidin kütlece yüzdesini hesaplayınız. ($MA_{Asetik Asit} = 60$ g/mol).
+
+**Mühendislik Çözümü:**
+1.  **Stokiyometri:** $CH_3COOH + NaOH \rightarrow CH_3COONa + H_2O$
+2.  **Titrant Molü:** $n_{NaOH} = M \times V = 1$ mol/L $\times 0.0023$ L = $0.0023$ mol.
+3.  **Analit Kütlesi:** $n_{Asetik Asit} = 0.0023$ mol. $m = 0.0023 \times 60 = 0.138$ g.
+4.  **Kütlece Yüzde:** $(0.138 / 1.45) \times 100 = 9.51\%$.
+
+**Senaryo 2: "Bağ Doğrusu (Tie-Line)" Çizimi**
+**Soru:** Elde ettiğiniz iki farklı faz (alt ve üst) kompozisyonunu Roozeboom diyagramı üzerinde nasıl birleştirirsiniz ve bu çizginin anlamı nedir?
+
+**Mühendislik Çözümü:** Üst ve alt fazın kompozisyonları eşkenar üçgen üzerinde işaretlenerek "Bağ Doğrusu (Tie-Line)" ile birleştirilir. Bu doğru, üzerindeki herhangi bir başlangıç karışımının termodinamik olarak her zaman doğrunun iki ucundaki fazlara ayrışacağını gösterir.
+
+---
+
+### İNTERAKTİF HIZLI TEKRAR KARTLARI (Flashcards)
+
+<details>
+<summary><b>Soru 1:</b> Gibbs Faz Kuralına göre, sabit T ve P koşullarında iki çözücü ve bir çözünenden oluşan iki fazlı sistemin serbestlik derecesi (F) kaçtır?</summary>
+<p><b>Cevap:</b> F = 1. Sabit basınç ve sıcaklıkta dış etkiler sabit olduğundan formül F = C - P şekline indirgenir. C=3, P=2 olduğundan F = 3 - 2 = 1 olarak bulunur[cite: 14].</p>
+</details>
+
+<details>
+<summary><b>Soru 2:</b> Kloroform ile çalışırken çeker ocak kullanımının İSG gerekçesi nedir?</summary>
+<p><b>Cevap:</b> Kloroform toksik ve kanserojen buharlara sahiptir[cite: 16]. Çeker ocak, olası solunum yolu maruziyetini kaynağında yok etmek için zorunludur[cite: 16].</p>
+</details>
+
+<details>
+<summary><b>Soru 3:</b> Roozeboom diyagramlarında saf bileşenler nerede konumlanır?</summary>
+<p><b>Cevap:</b> Saf bileşenler her zaman eşkenar üçgenin <b>köşelerinde</b> konumlanır[cite: 14, 15].</p>
+</details>
+
 
 
