@@ -36,17 +36,17 @@ graph TD
     classDef unit fill:#ecf0f1,stroke:#bdc3c7,stroke-width:2px;
     classDef analysis fill:#f39c12,stroke:#e67e22,stroke-width:2px,color:#fff;
 
-    S1([Akım 1: Su]):::stream --> MIX-101[MIX-101 \n Karıştırma Ünitesi]:::unit
-    S2([Akım 2: Kloroform]):::stream --> MIX-101
-    S3([Akım 3: Asetik Asit]):::stream --> MIX-101
+    S1(["Akım 1: Su"]):::stream --> MIX-101["MIX-101 <br> Karıştırma Ünitesi"]:::unit
+    S2(["Akım 2: Kloroform"]):::stream --> MIX-101
+    S3(["Akım 3: Asetik Asit"]):::stream --> MIX-101
     
-    MIX-101 -- S4 (Toplam 20 mL) --> SEP-101{SEP-101 \n Ayırma Hunisi \n (Sıvı-Sıvı Ekstraksiyon)}:::unit
+    MIX-101 -->|"S4 (Toplam 20 mL)"| SEP-101{"SEP-101 <br> Ayırma Hunisi <br> (Sıvı-Sıvı Ekstraksiyon)"}:::unit
     
-    SEP-101 -- S5: Sulu Faz (Üst) --> T-101[(Hacim ve Kütle \n Ölçüm Tankı)]:::unit
-    SEP-101 -- S6: Organik Faz (Alt) --> T-102[(Hacim ve Kütle \n Ölçüm Tankı)]:::unit
+    SEP-101 -->|"S5: Sulu Faz (Üst)"| T-101[("Hacim ve Kütle <br> Ölçüm Tankı")]:::unit
+    SEP-101 -->|"S6: Organik Faz (Alt)"| T-102[("Hacim ve Kütle <br> Ölçüm Tankı")]:::unit
     
-    T-101 -- S7: 1 mL Numune --> TIT-101[TIT-101 \n 1 M NaOH ile Titrasyon \n (Dönüm: Pembe)]:::analysis
-    T-102 -- S8: 1 mL Numune --> TIT-102[TIT-102 \n 1 M NaOH ile Titrasyon \n (Dönüm: Pembe)]:::analysis
+    T-101 -->|"S7: 1 mL Numune"| TIT-101["TIT-101 <br> 1 M NaOH ile Titrasyon <br> (Dönüm: Pembe)"]:::analysis
+    T-102 -->|"S8: 1 mL Numune"| TIT-102["TIT-102 <br> 1 M NaOH ile Titrasyon <br> (Dönüm: Pembe)"]:::analysis
 ```
 
 ### 5. Deneysel Veriler ve Hesaplamalar Tablosu
