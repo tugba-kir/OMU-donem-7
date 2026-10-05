@@ -158,6 +158,7 @@ Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
 </details>
 
 ### 7. Kapsamlı Sınav Senaryosu: Deney Düzeneği ve Grafik Entegrasyonu
+
 <details>
 **Deneysel Senaryo:**  
 Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Roozeboom diyagramı üzerinde gösterilen $M_1$ ve $M_2$ başlangıç karışımları hazırlanmış ve 20 mL'lik ayırma hunilerine alınmıştır. Termodinamik dengeye ulaşıldıktan sonra faz ayrımı gerçekleşmiş; üst faz (sulu) ve alt faz (organik) ayrıştırılarak numuneler alınmış ve titrasyonları yapılmıştır.
