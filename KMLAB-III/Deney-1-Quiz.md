@@ -186,7 +186,8 @@ Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
 <summary><b>Soru 5 (Hata Analizi):</b> Laboratuvardaki klima arızalandı ve ortam sıcaklığı deney sırasında $25^{\circ}C$'den $35^{\circ}C$'ye çıktı. Çizdiğiniz grafikteki faz sınır eğrisi bundan nasıl etkilenir?</summary>
 <p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
 </details>
-Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
+
+### Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
 
 <details>
 <summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
