@@ -208,7 +208,7 @@ Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Ro
                             /                   \
            Su (A) -------------------------------- Kloroform (C)
             %100                                       %100
-<details>
+
 <summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
 <p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
 </details>
