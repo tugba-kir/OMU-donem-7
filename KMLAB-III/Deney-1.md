@@ -21,11 +21,25 @@ Burada $F$ serbestlik derecesini, $C$ bileşen sayısını, $P$ sistemde bulunan
 *   **F = 3 - 2 = 1**
 Serbestlik derecesinin 1 olması, bu termodinamik denge durumunu tam tanımlayabilmek için yalnızca tek bir bağımsız değişkene (örneğin fazlardan birindeki asetik asit derişimine) ihtiyaç duyulduğunu kanıtlar.
 
-### 3. Kompozisyon Analizi ve Roozeboom Diyagramları
-Sabit basınç ve sıcaklıkta üç bileşenli sistemlerin faz diyagramlarını iki boyutlu uzayda çizmek için eşkenar üçgen (Roozeboom diyagramları) kullanılır[cite: 14].
-*   **Köşeler:** Saf (%100) bileşenleri temsil eder[cite: 14, 15].
-*   **Kenarlar:** İki bileşenli (ikili) sistemleri temsil eder[cite: 14, 15].
-*   **İç Bölge:** Üç bileşenli (ternary) karışımları temsil eder[cite: 15]. Bir noktanın kompozisyonu, o noktadan üçgen kenarlarına çizilen paralel doğruların eksenleri kestiği değerler okunarak belirlenir[cite: 15, 16].
+### 3. Kompozisyon Analizi ve Roozeboom Diyagramları (Örnekli Anlatım)
+Sabit basınç ve sıcaklıkta üç bileşenli sistemlerin faz diyagramlarını iki boyutlu uzayda çizmek için eşkenar üçgen (Roozeboom diyagramları) kullanılır[cite: 14]. 
+
+*(Not: Aşağıdaki anlatımı takip edebilmek için laboratuvar föyündeki Şekil 1'i referans alınız.)*
+![Roozeboom Diyagramı Örneği - Şekil 1](gorsel_yolu/sekil1.png)
+
+**Diyagramın Anatomisi:**
+*   **Köşeler (A, B, C):** Saf (%100) bileşenleri temsil eder[cite: 14, 15]. Örneğin föydeki grafikte A köşesi %100 Su, B köşesi %100 Aseton, C köşesi %100 Kloroformdur[cite: 14, 15].
+*   **Kenarlar (AB, BC, CA):** İki bileşenli (ikili) sistemleri temsil eder[cite: 14, 15]. Örneğin BC kenarı üzerindeki "K" noktasına bakarsanız, suyun %0 olduğu; %60 Aseton ve %40 Kloroform içeren ikili bir karışımı görürsünüz[cite: 15].
+*   **İç Bölge ($M_1$ Noktası):** Üç bileşenin de bulunduğu (ternary) karışımları temsil eder[cite: 15]. 
+
+**Örnek Bir Noktayı ($M_1$) Okuma Algoritması:**
+Diyagramın tam içindeki $M_1$ noktasının kompozisyonunu (kimden ne kadar var) bulmak için, bu noktadan üçgenin kenarlarına **paralel doğrular** çizeriz ve eksenleri kestiği yeri okuruz[cite: 15, 16]:
+
+1.  **Kloroform (C) Yüzdesini Okumak:** $M_1$ noktasından AB (Su-Aseton) kenarına paralel çizilen KMN doğrusunu takip edin. C eksenini kestiği değer **%40 Kloroform**'dur[cite: 15, 16].
+2.  **Aseton (B) Yüzdesini Okumak:** $M_1$ noktasından AC (Su-Kloroform) kenarına paralel çizilen LMP doğrusunu takip edin. B eksenini kestiği değer **%40 Aseton**'dur[cite: 15, 16].
+3.  **Su (A) Yüzdesini Okumak:** $M_1$ noktasından BC (Aseton-Kloroform) kenarına paralel çizilen RMO doğrusunu takip edin. A eksenini kestiği değer **%20 Su**'dur[cite: 15, 16].
+
+> **Mühendislik Sağlaması:** Okuduğunuz tüm bileşen yüzdelerinin toplamı daima %100 olmalıdır ($40 + 40 + 20 = 100$)[cite: 15]. Alternatif bir yöntem olarak; noktadan üçgen kenarlarına inilen dikmelerin uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16].
 
 ### 4. Proses Akım Şeması (PFD - Endüstriyel Standart)
 Asetik asit-kloroform-su karışımları toplam 20 ml olarak hazırlanıp ayırma hunisinde faz dengesine ulaşması sağlanır[cite: 16]. Ardından 1 M NaOH ve fenolftalein kullanılarak titrasyon gerçekleştirilir[cite: 16].
