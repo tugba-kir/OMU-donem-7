@@ -113,6 +113,41 @@ Laboratuvar ortamında elde edilecek değerler aşağıdaki tablolara işlenmeli
 *   **Kloroform ($CHCl_3$):** Toksik ve kanserojen etkileri bilinen bir solventtir[cite: 16]. Buharlarının solunmaması için deney mutlak suretle **çeker ocakta** çalışılmalıdır[cite: 16].
 *   **Asetik Asit ($CH_3COOH$):** Cilt, göz ve solunum yollarına zarar verebilen aşındırıcı ve yanıcı bir organik asittir[cite: 16].
 *   **Genel KKD:** Deney sırasında eldiven, laboratuvar önlüğü ve koruyucu gözlük kullanılması zorunludur[cite: 5, 10, 16]. Temas halinde bölge bol suyla yıkanmalı ve MSDS formlarındaki riskler dikkate alınmalıdır[cite: 16, 17].
+   ###  7. Kapsamlı Sınav Senaryosu: Deney Düzeneği ve Grafik Entegrasyonu
+
+**Deneysel Senaryo:** 
+Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Şekil 1'deki Roozeboom diyagramı üzerinde gösterilen bir $M_2$ başlangıç karışımı hazırlanmış ve 20 mL'lik ayırma hunisine alınmıştır. Termodinamik dengeye ulaşıldıktan sonra faz ayrımı gerçekleşmiş; üst faz (sulu) ve alt faz (organik) ayrıştırılarak 1'er mL numuneler alınmış ve 1 M NaOH ile titre edilmiştir. 
+
+Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
+
+<details>
+<summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
+</details>
+
+<details>
+<summary><b>Soru 2 (Faz Sınır Eğrisi):</b> Ayırma hunisine koyduğunuz $M_2$ karışımı, Roozeboom diyagramında çizilen o yarım ay şeklindeki eğrinin (binodal eğri) <b>dışında/üstünde</b> kalsaydı laboratuvarda ne gözlemlerdiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eğrinin dışı tek fazlı (homojen) bölgeyi temsil eder. Eğer başlangıç karışımı bu bölgeye düşseydi, ayırma hunisinde hiçbir faz ayrımı (katmanlaşma) gözlemleyemezdik; sistem tamamen berrak ve tek bir sıvı karışımı halinde kalırdı. Titrasyon yapmak için alt ve üst faz elde edemezdik.</p>
+</details>
+
+<details>
+<summary><b>Soru 3 (Deneysel Eğri Çizimi):</b> Tablo 2'deki titrasyon verilerini (harcanan NaOH hacimlerini) kullanarak grafikteki o binodal eğriyi ve bağ doğrularını (tie-lines) nasıl oluşturursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> 
+1. Titrasyondan elde edilen NaOH hacimleriyle, kütle denkliği kurularak alt ve üst fazdaki asetik asit yüzdeleri hesaplanır.<br>
+2. Bulunan bu alt ve üst faz kompozisyonları (su, kloroform ve asetik asit oranları) üçgen grafikte iki ayrı nokta olarak işaretlenir.<br>
+3. Bu iki nokta bir "Bağ Doğrusu (Tie-Line)" ile birleştirilir.<br>
+4. Farklı başlangıç derişimleri ($M_1, M_2, M_3$) için bu işlem tekrarlanıp elde edilen tüm uç noktalar birleştirildiğinde faz sınır eğrisi (binodal eğri) elde edilir.</p>
+</details>
+
+<details>
+<summary><b>Soru 4 (Kaldıraç Kuralı - Mass Balance):</b> Grafikteki $M_2$ noktası, oluşturduğunuz bağ doğrusunun tam ortasında değil de, su yönündeki (üst faz) uç noktaya daha yakın konumlanmıştır. Ayırma hunisinde gözlemleyeceğiniz alt ve üst faz hacimleri hakkında ne söylersiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Başlangıç noktası ($M_2$) bağ doğrusu üzerinde hangi faza (hangi uç noktaya) daha yakınsa, o fazın kütlece/hacimce miktarı daha fazladır (Kaldıraç Kuralı). $M_2$ noktası sulu faza daha yakın olduğu için, ayırma hunisinde üst fazın hacminin, alt faza kıyasla belirgin şekilde daha fazla olduğu gözlemlenir.</p>
+</details>
+
+<details>
+<summary><b>Soru 5 (Hata Analizi):</b> Laboratuvardaki klima arızalandı ve ortam sıcaklığı deney sırasında $25^{\circ}C$'den $35^{\circ}C$'ye çıktı. Çizdiğiniz grafikteki faz sınır eğrisi bundan nasıl etkilenir?</summary>
+<p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
+</details>
 
 ---
 
