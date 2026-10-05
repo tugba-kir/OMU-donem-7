@@ -6,7 +6,7 @@ Bu klasör, **KMB439 Kimyasal Teknolojiler** dersi notlarını, özetlerini ve p
 
 - [ ] **Hafta 01:** Giriş: Dersin tanıtımı, amaç, kapsam ve kimyasal teknolojilere genel bakış[cite: 2]
 - [ ] **Hafta 02:** Endüstriyel hammaddeler, hazırlama işlemleri, enerji tüketimi ve endüstriyel atık yönetimi[cite: 2]
-- [ ] **Hafta 03:** Endüstriyel gazlar: üretim yöntemleri ve kullanım alanları[cite: 2]
+- [ x ] **Hafta 03:** Endüstriyel gazlar: üretim yöntemleri ve kullanım alanları[cite: 2]
 - [ ] **Hafta 04:** Su teknolojisi: arıtma yöntemleri, endüstriyel kullanım ve geri dönüşüm[cite: 2]
 - [ ] **Hafta 05:** Seramik endüstrileri: hammaddeler, üretim yöntemleri ve uygulama alanları[cite: 2]
 - [ ] **Hafta 06:** Çimento endüstrisi: üretim prosesleri ve çevresel etkiler[cite: 2]
