@@ -131,3 +131,27 @@ Gıda ambalajlamasında cips paketlerinin içinin hava yerine saf Azot ($N_2$) g
 > * **Kimyasal Reaktiflik:** Oksijen ($O_2$) oldukça reaktif ve yükseltgeyici (okside edici) bir gazdır. Gıdalardaki yağlarla reaksiyona girerek acılaşmaya (oksidasyon) ve bakteriyel/mantar büyümesine zemin hazırlar. Azot ($N_2$) ise içerdiği üçlü bağ ($N \equiv N$) nedeniyle son derece kararlı, **inert (tepkimeye girmeyen)** bir gazdır. Gıdanın raf ömrünü uzatır ve pakete mekanik destek sağlar.
 > * **Hammadde ve Proses:** Bu çapta devasa bir azot ihtiyacı için tek ekonomik hammadde **Atmosferik Hava**'dır (%78 $N_2$, %21 $O_2$). Kullanılan proses ise **Havanın Sıvılaştırılarak Fraksiyonlu Damıtılmasıdır (Kriyojenik Ayrıştırma)**.
 > * **Proses Adımları:** Hava yüksek basınçta sıkıştırılır, nemi ve $CO_2$'si alınır, ardından aniden genleştirilerek (Joule-Thomson etkisi) sıvılaştırılır. Sıvı hava fraksiyon kolonuna gönderilir. Sıvı azot -196 °C'de, sıvı oksijen -183 °C'de kaynar. Kaynama noktası düşük (daha uçucu) olan azot gaz fazına geçerek kolonun tepesinden yüksek saflıkta çekilir.
+# ⚡ KMB439 Hızlı Tekrar Kartları (Flashcards) - Hafta 03
+
+*Not: Cevabı görmek için sorunun yanındaki küçük oka (▶) tıklayınız.*
+
+---
+
+<details>
+<summary><b>❓ Kart 1: Gravimetrik Faktör (GF) nedir?</b></summary>
+<br>
+<b>💡 Cevap:</b> Analitik kimyada, tartımı yapılan çökeleğin kütlesini, numunedeki aranan analitin (saf maddenin) kütlesine stokiyometrik olarak çevirmek için kullanılan matematiksel çarpım faktörüdür.
+</details>
+
+<details>
+<summary><b>❓ Kart 2: Su sertliği hesaplamalarında neden doğrudan Kalsiyum değil de $CaCO_3$ referans alınır?</b></summary>
+<br>
+<b>💡 Cevap:</b> Kalsiyum karbonatın ($CaCO_3$) mol kütlesi tam <b>100 g/mol</b> olduğu için hesaplamalarda büyük kolaylık sağlar. Ayrıca kalsiyum ve magnezyum iyonlarının sitokiyometrik oranları aynı olduğu için tüm sertlik tek bir formülde toplanabilir.
+</details>
+
+<details>
+<summary><b>❓ Kart 3: Geçici ve Kalıcı sertlik hangi tuzlardan kaynaklanır?</b></summary>
+<br>
+<b>💡 Cevap:</b> <br>
+• <b>Geçici Sertlik:</b> Kalsiyum ve magnezyum <b>bikarbonatlarından</b> kaynaklanır. Kaynatılarak veya Kireç ($CaO$) eklenerek giderilir.<br>
+• <b>Kalıcı Sertlik:</b> Kalsiyum ve magnezyum
