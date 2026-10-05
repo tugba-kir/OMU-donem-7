@@ -1,4 +1,4 @@
-### ADIM 2: KRİTİK HESAPLAMA VE SINAV SENARYOLARI
+### KRİTİK HESAPLAMA VE SINAV SENARYOLARI
 
 **Senaryo 1: Laboratuvar Giriş Quizi (Termodinamik Serbestlik)**
 **Soru:** Sabit sıcaklık ve basınç altında dengeye ulaşmış asetik asit - kloroform - su sisteminde, ayırma hunisinde belirgin iki faz (alt ve üst) gözlemlenmektedir. Bu sistemin termodinamik serbestlik derecesini hesaplayarak fiziksel anlamını açıklayınız.
