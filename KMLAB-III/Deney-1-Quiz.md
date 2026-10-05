@@ -71,6 +71,31 @@
 <summary><b>Soru 3:</b> Roozeboom diyagramlarında saf bileşenler nerede konumlanır?</summary>
 <p><b>Cevap:</b> Saf bileşenler her zaman eşkenar üçgenin <b>köşelerinde</b> konumlanır[cite: 14, 15].</p>
 </details>
+### Ekstra Sınav ve Quiz Senaryoları: Temelden İleri Düzeye
+
+#### 🟢 Temel Düzey (Kavramsal Isınma)
+
+<details>
+<summary><b>Soru 4:</b> Bu deneyde temel sistem olarak neden özellikle Su ve Kloroform seçilmiştir?</summary>
+<p><b>Cevap:</b> Temel şart, başlangıçta birbiri içerisinde karışmayan veya çok kısmen karışan iki farklı sıvı faz (katman) elde etmektir[cite: 14]. Su polar, kloroform ise apolar karaktere yakın olduğu için birbiri içinde çözünmezler ve yoğunluk farkından dolayı ayırma hunisinde iki net faz oluştururlar.</p>
+</details>
+
+<details>
+<summary><b>Soru 5:</b> Titrasyon işleminde neden Fenolftalein indikatörü kullanıyoruz?</summary>
+<p><b>Cevap:</b> Fazlardaki asetik asit miktarını belirlemek için asit-baz titrasyonu yapıyoruz[cite: 16]. Fenolftalein, bazik ortama geçildiğinde (tüm asetik asit tükenip ortamda NaOH fazlalığı oluştuğunda) çözeltinin rengini pembeye çevirerek reaksiyonun bittiği dönüm noktasını hassas bir şekilde yakalamamızı sağlar[cite: 16].</p>
+</details>
+
+#### 🔴 İleri Düzey (Ayırt Edici Mühendislik Soruları)
+
+<details>
+<summary><b>Soru 6:</b> "Kritik Nokta" (Plait Point) kavramını üç bileşenli faz diyagramı üzerinde fiziksel olarak açıklayınız.</summary>
+<p><b>Cevap:</b> Roozeboom diyagramındaki iki fazlı bölgeyi sınırlayan eğrinin tepe noktasıdır. Asetik asit eklendikçe su ve kloroformun birbirleri içindeki çözünürlükleri artar. Kritik noktada, ayrışan alt ve üst fazların kimyasal kompozisyonları ve yoğunlukları birbirine tam olarak eşitlenir; yani iki faz arasındaki ayrım çizgisi kaybolur ve sistem tek faza (homojen karışım) dönüşür.</p>
+</details>
+
+<details>
+<summary><b>Soru 7:</b> Termodinamik denge sağlandıktan sonra, ayırma hunisindeki üst faz (su) ve alt faz (kloroform) miktarlarının (kütlece oranlarının) birbirine eşit olup olmadığını diyagram üzerinden nasıl ispatlarsınız?</summary>
+<p><b>Cevap:</b> <b>Kaldıraç Kuralı (Lever Rule)</b> ile ispatlanır. Toplam karışımın kompozisyonunu gösteren nokta (M noktası), bağ doğrusunun (tie-line) neresinde konumlanıyorsa faz miktarları buna göre belirlenir. M noktası bağ doğrusunun tam ortasında değilse, fazların kütleleri eşit değildir. Hangi fazın (uç noktanın) derişimine daha yakınsa, o fazın kütlece miktarı daha fazladır.</p>
+</details>
 
 
 
