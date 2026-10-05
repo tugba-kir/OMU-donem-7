@@ -44,7 +44,7 @@ flowchart TD
     subgraph Reaksiyon_ve_Durultma
         IN([Ham Su <br> Ca+2, Mg+2]) --> M1{Hızlı Karıştırıcı <br> Flash Mixer}
         M1 --> M2[Yavaş Karıştırıcı <br> Flocculation]
-        M2 --> CLR[/Durultucu - Clarifier \ ]
+        M2 --> CLR[Durultucu - Clarifier]
         CLR -->|Üst Akım - Taşma| OUT([Yumuşatılmış Su])
     end
 
