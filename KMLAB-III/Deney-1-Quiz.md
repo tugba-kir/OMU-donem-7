@@ -38,4 +38,4 @@
 
 ---
 
-Laboratuvar girişinde özellikle Gibbs Faz Kuralının bu indirgenmiş hali ($F = C - P$) ve NaOH ile asetik asit titrasyonu çok sık sorulur. İkinci deney olan Saf Suyun Termodinamik Özellikleri deneyinin notlarına ne zaman geçelim?
+
