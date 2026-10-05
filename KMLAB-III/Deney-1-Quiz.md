@@ -173,12 +173,12 @@ Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Ro
                              /      \
             (Binodal Eğri)  /   M₁   \
                            / .------. \
-                          / :   M₂    : \
-                         /  : (Merkez): \
+                          / :   M₂   : \
+                         /  :(Merkez):  \
                         /   '--------'   \
-                       /                 \
-                      /                   \
-                     /_____________________\
+                       /                  \
+                      /                    \
+                     /____________________ _\
                    Su (A)                 Kloroform (C)
                     %100                      %100
 Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
