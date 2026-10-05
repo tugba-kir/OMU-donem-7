@@ -96,6 +96,124 @@
 <summary><b>Soru 7:</b> Termodinamik denge sağlandıktan sonra, ayırma hunisindeki üst faz (su) ve alt faz (kloroform) miktarlarının (kütlece oranlarının) birbirine eşit olup olmadığını diyagram üzerinden nasıl ispatlarsınız?</summary>
 <p><b>Cevap:</b> <b>Kaldıraç Kuralı (Lever Rule)</b> ile ispatlanır. Toplam karışımın kompozisyonunu gösteren nokta (M noktası), bağ doğrusunun (tie-line) neresinde konumlanıyorsa faz miktarları buna göre belirlenir. M noktası bağ doğrusunun tam ortasında değilse, fazların kütleleri eşit değildir. Hangi fazın (uç noktanın) derişimine daha yakınsa, o fazın kütlece miktarı daha fazladır.</p>
 </details>
+Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
 
+<details>
+<summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
+</details>
 
+<details>
+<summary><b>Soru 2 (Faz Sınır Eğrisi):</b> Ayırma hunisine koyduğunuz $M_2$ karışımı, Roozeboom diyagramında çizilen o yarım ay şeklindeki eğrinin (binodal eğri) <b>dışında/üstünde</b> kalsaydı laboratuvarda ne gözlemlerdiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eğrinin dışı tek fazlı (homojen) bölgeyi temsil eder. Eğer başlangıç karışımı bu bölgeye düşseydi, ayırma hunisinde hiçbir faz ayrımı (katmanlaşma) gözlemleyemezdik; sistem tamamen berrak ve tek bir sıvı karışımı halinde kalırdı. Titrasyon yapmak için alt ve üst faz elde edemezdik.</p>
+</details>
+
+<details>
+<summary><b>Soru 3 (Deneysel Eğri Çizimi):</b> Tablo 2'deki titrasyon verilerini (harcanan NaOH hacimlerini) kullanarak grafikteki o binodal eğriyi ve bağ doğrularını (tie-lines) nasıl oluşturursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> 
+1. Titrasyondan elde edilen NaOH hacimleriyle, kütle denkliği kurularak alt ve üst fazdaki asetik asit yüzdeleri hesaplanır.<br>
+2. Bulunan bu alt ve üst faz kompozisyonları (su, kloroform ve asetik asit oranları) üçgen grafikte iki ayrı nokta olarak işaretlenir.<br>
+3. Bu iki nokta bir "Bağ Doğrusu (Tie-Line)" ile birleştirilir.<br>
+4. Farklı başlangıç derişimleri ($M_1, M_2, M_3$) için bu işlem tekrarlanıp elde edilen tüm uç noktalar birleştirildiğinde faz sınır eğrisi (binodal eğri) elde edilir.</p>
+</details>
+
+<details>
+<summary><b>Soru 4 (Kaldıraç Kuralı - Mass Balance):</b> Grafikteki $M_2$ noktası, oluşturduğunuz bağ doğrusunun tam ortasında değil de, su yönündeki (üst faz) uç noktaya daha yakın konumlanmıştır. Ayırma hunisinde gözlemleyeceğiniz alt ve üst faz hacimleri hakkında ne söylersiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Başlangıç noktası ($M_2$) bağ doğrusu üzerinde hangi faza (hangi uç noktaya) daha yakınsa, o fazın kütlece/hacimce miktarı daha fazladır (Kaldıraç Kuralı). $M_2$ noktası sulu faza daha yakın olduğu için, ayırma hunisinde üst fazın hacminin, alt faza kıyasla belirgin şekilde daha fazla olduğu gözlemlenir.</p>
+</details>
+
+<details>
+<summary><b>Soru 5 (Hata Analizi):</b> Laboratuvardaki klima arızalandı ve ortam sıcaklığı deney sırasında $25^{\circ}C$'den $35^{\circ}C$'ye çıktı. Çizdiğiniz grafikteki faz sınır eğrisi bundan nasıl etkilenir?</summary>
+<p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
+</details>
+Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
+
+<details>
+<summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
+</details>
+
+<details>
+<summary><b>Soru 2 (Faz Sınır Eğrisi):</b> Ayırma hunisine koyduğunuz $M_2$ karışımı, Roozeboom diyagramında çizilen o yarım ay şeklindeki eğrinin (binodal eğri) <b>dışında/üstünde</b> kalsaydı laboratuvarda ne gözlemlerdiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eğrinin dışı tek fazlı (homojen) bölgeyi temsil eder. Eğer başlangıç karışımı bu bölgeye düşseydi, ayırma hunisinde hiçbir faz ayrımı (katmanlaşma) gözlemleyemezdik; sistem tamamen berrak ve tek bir sıvı karışımı halinde kalırdı. Titrasyon yapmak için alt ve üst faz elde edemezdik.</p>
+</details>
+
+<details>
+<summary><b>Soru 3 (Deneysel Eğri Çizimi):</b> Tablo 2'deki titrasyon verilerini (harcanan NaOH hacimlerini) kullanarak grafikteki o binodal eğriyi ve bağ doğrularını (tie-lines) nasıl oluşturursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> 
+1. Titrasyondan elde edilen NaOH hacimleriyle, kütle denkliği kurularak alt ve üst fazdaki asetik asit yüzdeleri hesaplanır.<br>
+2. Bulunan bu alt ve üst faz kompozisyonları (su, kloroform ve asetik asit oranları) üçgen grafikte iki ayrı nokta olarak işaretlenir.<br>
+3. Bu iki nokta bir "Bağ Doğrusu (Tie-Line)" ile birleştirilir.<br>
+4. Farklı başlangıç derişimleri ($M_1, M_2, M_3$) için bu işlem tekrarlanıp elde edilen tüm uç noktalar birleştirildiğinde faz sınır eğrisi (binodal eğri) elde edilir.</p>
+</details>
+
+<details>
+<summary><b>Soru 4 (Kaldıraç Kuralı - Mass Balance):</b> Grafikteki $M_2$ noktası, oluşturduğunuz bağ doğrusunun tam ortasında değil de, su yönündeki (üst faz) uç noktaya daha yakın konumlanmıştır. Ayırma hunisinde gözlemleyeceğiniz alt ve üst faz hacimleri hakkında ne söylersiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Başlangıç noktası ($M_2$) bağ doğrusu üzerinde hangi faza (hangi uç noktaya) daha yakınsa, o fazın kütlece/hacimce miktarı daha fazladır (Kaldıraç Kuralı). $M_2$ noktası sulu faza daha yakın olduğu için, ayırma hunisinde üst fazın hacminin, alt faza kıyasla belirgin şekilde daha fazla olduğu gözlemlenir.</p>
+</details>
+
+<details>
+<summary><b>Soru 5 (Hata Analizi):</b> Laboratuvardaki klima arızalandı ve ortam sıcaklığı deney sırasında $25^{\circ}C$'den $35^{\circ}C$'ye çıktı. Çizdiğiniz grafikteki faz sınır eğrisi bundan nasıl etkilenir?</summary>
+<p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
+</details>
+Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
+
+<details>
+<summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
+</details>
+
+<details>
+<summary><b>Soru 2 (Faz Sınır Eğrisi):</b> Ayırma hunisine koyduğunuz $M_2$ karışımı, Roozeboom diyagramında çizilen o yarım ay şeklindeki eğrinin (binodal eğri) <b>dışında/üstünde</b> kalsaydı laboratuvarda ne gözlemlerdiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eğrinin dışı tek fazlı (homojen) bölgeyi temsil eder. Eğer başlangıç karışımı bu bölgeye düşseydi, ayırma hunisinde hiçbir faz ayrımı (katmanlaşma) gözlemleyemezdik; sistem tamamen berrak ve tek bir sıvı karışımı halinde kalırdı. Titrasyon yapmak için alt ve üst faz elde edemezdik.</p>
+</details>
+
+<details>
+<summary><b>Soru 3 (Deneysel Eğri Çizimi):</b> Tablo 2'deki titrasyon verilerini (harcanan NaOH hacimlerini) kullanarak grafikteki o binodal eğriyi ve bağ doğrularını (tie-lines) nasıl oluşturursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> 
+1. Titrasyondan elde edilen NaOH hacimleriyle, kütle denkliği kurularak alt ve üst fazdaki asetik asit yüzdeleri hesaplanır.<br>
+2. Bulunan bu alt ve üst faz kompozisyonları (su, kloroform ve asetik asit oranları) üçgen grafikte iki ayrı nokta olarak işaretlenir.<br>
+3. Bu iki nokta bir "Bağ Doğrusu (Tie-Line)" ile birleştirilir.<br>
+4. Farklı başlangıç derişimleri ($M_1, M_2, M_3$) için bu işlem tekrarlanıp elde edilen tüm uç noktalar birleştirildiğinde faz sınır eğrisi (binodal eğri) elde edilir.</p>
+</details>
+
+<details>
+<summary><b>Soru 4 (Kaldıraç Kuralı - Mass Balance):</b> Grafikteki $M_2$ noktası, oluşturduğunuz bağ doğrusunun tam ortasında değil de, su yönündeki (üst faz) uç noktaya daha yakın konumlanmıştır. Ayırma hunisinde gözlemleyeceğiniz alt ve üst faz hacimleri hakkında ne söylersiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Başlangıç noktası ($M_2$) bağ doğrusu üzerinde hangi faza (hangi uç noktaya) daha yakınsa, o fazın kütlece/hacimce miktarı daha fazladır (Kaldıraç Kuralı). $M_2$ noktası sulu faza daha yakın olduğu için, ayırma hunisinde üst fazın hacminin, alt faza kıyasla belirgin şekilde daha fazla olduğu gözlemlenir.</p>
+</details>
+
+<details>
+<summary><b>Soru 5 (Hata Analizi):</b> Laboratuvardaki klima arızalandı ve ortam sıcaklığı deney sırasında $25^{\circ}C$'den $35^{\circ}C$'ye çıktı. Çizdiğiniz grafikteki faz sınır eğrisi bundan nasıl etkilenir?</summary>
+<p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
+</details>
+Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
+
+<details>
+<summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
+</details>
+
+<details>
+<summary><b>Soru 2 (Faz Sınır Eğrisi):</b> Ayırma hunisine koyduğunuz $M_2$ karışımı, Roozeboom diyagramında çizilen o yarım ay şeklindeki eğrinin (binodal eğri) <b>dışında/üstünde</b> kalsaydı laboratuvarda ne gözlemlerdiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Eğrinin dışı tek fazlı (homojen) bölgeyi temsil eder. Eğer başlangıç karışımı bu bölgeye düşseydi, ayırma hunisinde hiçbir faz ayrımı (katmanlaşma) gözlemleyemezdik; sistem tamamen berrak ve tek bir sıvı karışımı halinde kalırdı. Titrasyon yapmak için alt ve üst faz elde edemezdik.</p>
+</details>
+
+<details>
+<summary><b>Soru 3 (Deneysel Eğri Çizimi):</b> Tablo 2'deki titrasyon verilerini (harcanan NaOH hacimlerini) kullanarak grafikteki o binodal eğriyi ve bağ doğrularını (tie-lines) nasıl oluşturursunuz?</summary>
+<p><b>Mühendislik Çözümü:</b> 
+1. Titrasyondan elde edilen NaOH hacimleriyle, kütle denkliği kurularak alt ve üst fazdaki asetik asit yüzdeleri hesaplanır.<br>
+2. Bulunan bu alt ve üst faz kompozisyonları (su, kloroform ve asetik asit oranları) üçgen grafikte iki ayrı nokta olarak işaretlenir.<br>
+3. Bu iki nokta bir "Bağ Doğrusu (Tie-Line)" ile birleştirilir.<br>
+4. Farklı başlangıç derişimleri ($M_1, M_2, M_3$) için bu işlem tekrarlanıp elde edilen tüm uç noktalar birleştirildiğinde faz sınır eğrisi (binodal eğri) elde edilir.</p>
+</details>
+
+<details>
+<summary><b>Soru 4 (Kaldıraç Kuralı - Mass Balance):</b> Grafikteki $M_2$ noktası, oluşturduğunuz bağ doğrusunun tam ortasında değil de, su yönündeki (üst faz) uç noktaya daha yakın konumlanmıştır. Ayırma hunisinde gözlemleyeceğiniz alt ve üst faz hacimleri hakkında ne söylersiniz?</summary>
+<p><b>Mühendislik Çözümü:</b> Başlangıç noktası ($M_2$) bağ doğrusu üzerinde hangi faza (hangi uç noktaya) daha yakınsa, o fazın kütlece/hacimce miktarı daha fazladır (Kaldıraç Kuralı). $M_2$ noktası sulu faza daha yakın olduğu için, ayırma hunisinde üst fazın hacminin, alt faza kıyasla belirgin şekilde daha fazla olduğu gözlemlenir.</p>
+</details>
+
+<details>
+<summary><b>Soru 5 (Hata Analizi):</b> Laboratuvardaki klima arızalandı ve ortam sıcaklığı deney sırasında $25^{\circ}C$'den $35^{\circ}C$'ye çıktı. Çizdiğiniz grafikteki faz sınır eğrisi bundan nasıl etkilenir?</summary>
+<p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
+</details>
 
