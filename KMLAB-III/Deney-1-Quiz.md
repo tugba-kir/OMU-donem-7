@@ -187,12 +187,15 @@ Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
 <p><b>Mühendislik Çözümü:</b> Sıcaklık artışı genellikle sıvıların birbirleri içindeki karşılıklı çözünürlüğünü artırır. Bu durumda su ve kloroform daha fazla birbirine karışacağı için iki fazlı bölgenin alanı daralır. Binodal eğri, üçgenin tabanına (su-kloroform kenarına) doğru küçülerek aşağı kayar.</p>
 </details>
 
+
+```markdown
 ### 7. Kapsamlı Sınav Senaryosu: Deney Düzeneği ve Grafik Entegrasyonu
 
 **Deneysel Senaryo:** 
-Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Roozeboom diyagramı üzerinde gösterilen $M_1$ ve $M_2$ başlangıç karışımları hazırlanmış ve 20 mL'lik ayırma hunilerine alınmıştır. Termodinamik dengeye ulaşıldıktan sonra faz ayrımı gerçekleşmiş; üst faz (sulu) ve alt faz (organik) ayrıştırılarak numuneler alınmış ve titrasyonları yapılmıştır[cite: 14, 16].
+Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Roozeboom diyagramı üzerinde gösterilen $M_1$ ve $M_2$ başlangıç karışımları hazırlanmış ve 20 mL'lik ayırma hunilerine alınmıştır. Termodinamik dengeye ulaşıldıktan sonra faz ayrımı gerçekleşmiş; üst faz (sulu) ve alt faz (organik) ayrıştırılarak numuneler alınmış ve titrasyonları yapılmıştır.
 
 **Referans Roozeboom Diyagramı (Görsel Destekli Soru Analizi):**
+
 ```text
                            Aseton / Asetik Asit (B)
                                     %100
@@ -209,6 +212,7 @@ Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Ro
            Su (A) -------------------------------- Kloroform (C)
             %100                                       %100
 
+<details>
 <summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
 <p><b>Mühendislik Çözümü:</b> Eşkenar üçgenin içindeki herhangi bir noktadan kenarlara inilen üç dik doğrunun uzunlukları toplamı, daima üçgenin toplam yüksekliğine eşittir[cite: 16]. Bir bileşenin yüzdesi, o bileşenin %0 olduğu karşı kenara inilen dikmenin uzunluğunun, üçgenin toplam yüksekliğine oranlanmasıyla (% olarak) bulunur[cite: 15, 16].</p>
 </details>
