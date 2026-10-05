@@ -118,6 +118,33 @@ Laboratuvar ortamında elde edilecek değerler aşağıdaki tablolara işlenmeli
 **Deneysel Senaryo:** 
 Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Şekil 1'deki Roozeboom diyagramı üzerinde gösterilen bir $M_2$ başlangıç karışımı hazırlanmış ve 20 mL'lik ayırma hunisine alınmıştır. Termodinamik dengeye ulaşıldıktan sonra faz ayrımı gerçekleşmiş; üst faz (sulu) ve alt faz (organik) ayrıştırılarak 1'er mL numuneler alınmış ve 1 M NaOH ile titre edilmiştir. 
 
+### 8. Termodinamik Analiz İçin Titrasyon Temelleri ve Laboratuvar Prosedürü
+
+**1 Molar (1 M) Ne Demektir?**
+Molarite ($M$), kimyada derişimi (konsantrasyonu) ifade eden en temel mühendislik birimidir ve 1 litre çözeltide çözünmüş maddenin "mol" sayısını belirtir ($M = n/V$). 
+Deneyde kullandığımız **1 M NaOH** (Sodyum Hidroksit), 1 litre çözeltide tam 1 mol (yani 40 gram) saf NaOH çözünmüş demektir[cite: 17]. Bu, konsantrasyonu kesin olarak "bilinen" standart çözeltimizdir (Titrant). Amacımız bu bilinen derişimi kullanarak, numunemizdeki "bilinmeyen" asetik asit miktarını tespit etmektir.
+
+**Titrasyonun Kimyasal Mantığı:**
+Ortamdaki asetik asit ($CH_3COOH$), büretten eklediğimiz baz ($NaOH$) ile birebir oranda nötrleşme reaksiyonuna girer:
+$$CH_3COOH + NaOH \rightarrow CH_3COONa + H_2O$$
+Bu stokiyometrik denkleme göre 1 mol asetik asidi yok etmek (nötrlemek) için tam 1 mol NaOH gerekir. Eğer reaksiyonu bitirmek için ne kadar NaOH harcadığımızı bulursak, kütle denkliği prensibiyle numune içinde ne kadar asetik asit bulunduğunu kanıtlamış oluruz.
+
+**Adım Adım Laboratuvar Prosedürü (Hangisinden Ne Kadar Katıyoruz?)**
+
+1. **Numune Alımı (Analit):** Ayırma hunisinde termodinamik dengeye gelip ayrışan fazlardan birinden (örneğin üstteki sulu fazdan) pipet yardımıyla hassas bir şekilde **tam 1 mL** numune çekilip boş bir erlenmayere (koni şeklindeki cam kaba) aktarılır[cite: 17].
+2. **İndikatör İlavesi:** Erlenmayerin içindeki 1 mL'lik numunenin üzerine birkaç damla **Fenolftalein** indikatörü damlatılır[cite: 16]. Fenolftalein asidik ortamda renksizdir; ortam nötrlenip hafifçe baza kaydığı an rengi pembeye döner[cite: 16].
+3. **Büretin Hazırlanması (Titrant):** Üzerinde hacim çizgileri (mL) bulunan uzun ve musluklu cam boruya (bürete) **1 M NaOH** çözeltisi doldurulur ve sıvı seviyesinin başlangıç noktası not edilir[cite: 16, 17].
+4. **Titrasyon İşlemi:** Büretin musluğu hafifçe açılarak erlenmayere damla damla NaOH eklenir. Lokal asit-baz birikmelerini önlemek için erlenmayer sürekli olarak dairesel hareketlerle çalkalanır.
+5. **Dönüm Noktası (Eşdeğerlik Noktası):** Erlenmayerdeki sıvının rengi kalıcı, uçuk bir pembe renge dönüştüğü ilk an (tüm asetik asidin tükendiği ve ortamda ilk fazla NaOH damlasının kaldığı an) musluk derhal kapatılır.
+6. **Veri Okuma:** Büretteki sıvı seviyesinin ne kadar düştüğüne bakılarak, işlem boyunca erlenmayere toplam kaç mL NaOH eklendiği okunur. Bu değer, hesaplama tablolarındaki "$V_{harcanan}$" değeridir.
+
+**Örnek Bir Mühendislik Hesaplaması (Döngünün Tamamlanması):**
+Diyelim ki o 1 mL'lik alt faz numunesini titre ederken büretten tam **3 mL (0.003 Litre)** NaOH harcadınız.
+*   **Harcanan NaOH Molü:** $n = M \times V \Rightarrow 1$ mol/L $\times 0.003$ L = $0.003$ mol NaOH.
+*   **Asetik Asit Molü:** Reaksiyon 1:1 olduğu için numunenizin (o 1 mL'nin) içinde de tam **0.003 mol asetik asit** vardır.
+*   **Asetik Asit Kütlesi:** $m = n \times MA \Rightarrow 0.003$ mol $\times 60$ g/mol = $0.18$ gram.
+
+Yani denge halindeki o fazın her 1 mL'sinde 0.18 gram asetik asit bulunduğunu ispatlamış oldunuz. Tüm sistem bu basit oran üzerine kuruludur.
 
 ---
 
