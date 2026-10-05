@@ -182,7 +182,8 @@ Laboratuvarda asetik asit-kloroform-su sistemini inceliyorsunuz. Aşağıdaki Ro
                    Su (A)                 Kloroform (C)
                     %100                      %100
 Aşağıdaki soruları bu deneysel senaryoya göre cevaplayınız:
-</details>
+
+```
 
 <details>
 <summary><b>Soru 1 (Föydeki $M_2$ Noktası Kuralı):</b> Şekil 1'deki $M_2$ noktası için üçgenin kenarlarına paralel değil, <b>dik doğrular</b> inilmiştir. Bu dikmelerin uzunluklarını kullanarak kompozisyonu nasıl okursunuz?</summary>
