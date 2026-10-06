@@ -155,3 +155,39 @@ Ters Laplace tablo kuralları uygulanarak zaman domenine geçilir:
 $$ h'(t) = 2 - 2e^{-t} $$
 
 (Sistem başladığında sapma sıfırdır. Zaman sonsuza gittiğinde seviye sapması 2 metrede sabitlenir.)
+**A ve B Katsayıları Nasıl Bulundu? (Kısmi Kesirlere Ayırma Adımları)**
+
+Elimizdeki birleşik kesir: 
+
+$$ \frac{2}{s(s+1)} $$
+
+Bunu tablolarda bulabileceğimiz iki basit kesre ayırmak istiyoruz:
+
+$$ \frac{2}{s(s+1)} = \frac{A}{s} + \frac{B}{s+1} $$
+
+Buradaki $A$ ve $B$'yi bulmak için matematikteki en pratik yol olan **"Kök Yerine Koyma (Kapatma)"** yöntemini kullanırız:
+
+**1. "A" değerini bulmak için:**
+*   $A$'nın paydası nedir? $s$. 
+*   Bu paydayı sıfır yapan değer nedir? $s = 0$.
+*   Şimdi eşitliğin sol tarafındaki ana kesre git: $\frac{2}{s(s+1)}$. 
+*   Burada $A$'nın paydası olan $s$'yi parmağınla kapat (veya yok say). Geriye $\frac{2}{s+1}$ kalır.
+*   Bu kalan ifadede $s$ yerine bulduğumuz $0$ değerini yaz:
+
+$$ A = \frac{2}{0 + 1} = \frac{2}{1} = 2 $$
+
+**2. "B" değerini bulmak için:**
+*   $B$'nin paydası nedir? $(s+1)$.
+*   Bu paydayı sıfır yapan değer nedir? $s = -1$.
+*   Yine ana kesre git: $\frac{2}{s(s+1)}$.
+*   Bu sefer $B$'nin paydası olan $(s+1)$ kısmını parmağınla kapat. Geriye $\frac{2}{s}$ kalır.
+*   Bu kalan ifadede $s$ yerine bulduğumuz $-1$ değerini yaz:
+
+$$ B = \frac{2}{-1} = -2 $$
+
+**Sonuç:**
+A ve B değerlerini bulduğumuza göre, başlangıçtaki parçalanmış formülde yerlerine koyuyoruz.
+
+$$ H'(s) = \frac{2}{s} - \frac{2}{s+1} $$
+
+İşte "2 ve -2" değerleri, tamamen paydaları sıfır yapan (kök) değerlerin, kesrin geri kalanında yerine konmasıyla ortaya çıkan matematiksel bir sonuçtur.
