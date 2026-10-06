@@ -123,3 +123,9 @@ $$ \frac{d^2x}{dt^2} + 6\frac{dx}{dt} + 8x = 2 $$
 <summary><b>Soru 4:</b> Prosese uygulanan anlık/sabit şok yüklemeleri hangi fonksiyonla modellenir?</summary>
 <p><b>Cevap:</b> Basamak (Step) Fonksiyonu ile modellenir[cite: 10]. Zaman domeninde $h \cdot u(t)$, Laplace domeninde ise $h/s$ olarak gösterilir[cite: 10].</p>
 </details>
+
+**Ek Laplace Dönüşümleri (Ani Darbe ve İntegral):**
+*   **Ani Darbe (Impulse / Dirac Delta) Fonksiyonu:** Sisteme teorik olarak sıfır zaman aralığında ($t \to 0$), alanı 1 (veya belirli bir $h$ sabiti) olacak şekilde sonsuz büyüklükte bir etki uygulandığını varsayar. Proses mühendisliğinde kromatografik enjeksiyon veya reaktöre anlık izotop/tracer verilmesi gibi dinamiklerin modellenmesinde kullanılır[cite: 9]. 
+    *   $f(t)=\delta(t) \implies \mathcal{L}(\delta(t))=1$ (Birim ani darbe için)[cite: 9]
+*   **İntegral Dönüşümü:** Kontrol sistemlerinde (özellikle PID kontrolörlerin İntegral etkisinde) karşılaşılan zaman integrallerini $s$-domenine aktarmak için kullanılır[cite: 12].
+    *   $\mathcal{L}(\int_0^t f(t)dt)=\frac{F(s)}{s}$[cite: 12]
