@@ -90,8 +90,4 @@ $$ H'(s) = \frac{2}{s} - \frac{2}{s+1} $$
 
 $$ h'(t) = 2 - 2e^{-t} $$
 
-*Fiziksel Yorum: Kronometreye bastığında
-($t=0$)
-hata sıfırdır. Saatler geçtiğinde
-($t \to \infty$ iken $e^{-\infty} = 0$) hata $2 - 0 = 2$ 
-birimde sabitlenir. Yani vanayı açtığımızda tankın seviyesi zamanla logaritmik olarak 2 metre yükselecek ve o noktada yeni bir dengeye oturacaktır.*
+**Fiziksel Yorum:** Kronometreye bastığında ($t=0$) hata sıfırdır. Saatler geçtiğinde ($t \to \infty$ iken $e^{-\infty} = 0$) hata $2 - 0 = 2$ birimde sabitlenir. Yani vanayı açtığımızda tankın seviyesi zamanla logaritmik olarak 2 metre yükselecek ve o noktada yeni bir dengeye oturacaktır.
