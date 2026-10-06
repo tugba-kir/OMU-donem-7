@@ -38,20 +38,20 @@ Proses kontrol, endüstriyel sistemlerde belirlenen değişkenlerin (sıcaklık,
 Laplace dönüşümü, zaman domeni ($t$) diferansiyel denklemlerini, karmaşık $s$ domeninde cebirsel denklemlere indirgeyerek analitik çözümü kolaylaştırır[cite: 8].
 
 **Tanım Bağıntısı:**
-$$ F(s) = \mathcal{L}\{f(t)\} = \int_{0}^{\infty} e^{-st} f(t) dt $$[cite: 8, 9]
+
+$$F(s)=\mathcal{L}(f(t))=\int_{0}^{\infty} e^{-st} f(t) dt$$
 
 **Temel Giriş Fonksiyonları ve Laplace Dönüşümleri:**
 *   **Basamak (Step) Fonksiyonu:** Sisteme anlık ve sabit bir sinyal uygulamasını ifade eder[cite: 9, 10]. 
-    *   $f(t) = h \cdot u(t) \implies \mathcal{L}\{h \cdot u(t)\} = \frac{h}{s}$[cite: 10]
+    *   $f(t)=h \cdot u(t) \implies \mathcal{L}(h \cdot u(t))=\frac{h}{s}$[cite: 10]
 *   **Darbe (Pulse) Fonksiyonu:** Belirli bir $t_0$ anına kadar sabit uygulanıp sonra sıfırlanan sinyaldir[cite: 9, 10].
-    *   $f(t) = h \cdot u(t) - h \cdot u(t-t_0) \implies \mathcal{L}\{f(t)\} = \frac{h}{s}(1 - e^{-t_0 s})$[cite: 10]
+    *   $f(t)=h \cdot u(t)-h \cdot u(t-t_0) \implies \mathcal{L}(f(t))=\frac{h}{s}(1-e^{-t_0 s})$[cite: 10]
 *   **Rampa (Ramp) Fonksiyonu:** Sisteme zamanla lineer artan bir etki geldiğinde kullanılır[cite: 9, 11].
-    *   $f(t) = A \cdot t \implies \mathcal{L}\{A \cdot t\} = \frac{A}{s^2}$[cite: 11]
+    *   $f(t)=A \cdot t \implies \mathcal{L}(A \cdot t)=\frac{A}{s^2}$[cite: 11]
 
 **Türev Dönüşümleri:**
-*   $\mathcal{L}\{f'(t)\} = sF(s) - f(0)$[cite: 12]
-*   $\mathcal{L}\{f''(t)\} = s^2F(s) - s f(0) - f'(0)$[cite: 12]
-
+*   $\mathcal{L}(f'(t))=sF(s)-f(0)$[cite: 12]
+*   $\mathcal{L}(f''(t))=s^2F(s)-sf(0)-f'(0)$[cite: 12]
 ---
 
 ### Hafta 3: Doğrusal Açık Döngü Sistemler ve Karıştırıcılı Tank Modeli[cite: 2]
