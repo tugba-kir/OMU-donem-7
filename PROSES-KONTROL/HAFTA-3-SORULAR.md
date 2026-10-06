@@ -49,7 +49,7 @@ Sistem yeterince uzun süre çalıştırıldığında ( $t \to \infty$ ), geçic
 
 $$ y(\infty) = 0.5 + 0 = 0.5 $$
 
----
+
 
 ### Soru 2: Sıvı Seviye Kontrol Sistemi Analizi
 **Soru:** Kesit alanı $A = 5$ metrekare olan bir prosese $q_i$ debisi ile sıvı beslenmektedir[cite: 21]. Çıkış debisi vananın direncine bağlı olarak $q_o = h / R$ kuralına göre değişmektedir ($R = 2$)[cite: 21]. Proses başlangıçta $2$ metreküp/dakika giriş debisi ile kararlı haldedir. Giriş debisinde aniden meydana gelen $0.5$ birimlik basamak artışı sonrasında sistemin seviye profili nasıl değişir[cite: 20, 21]?
@@ -166,7 +166,7 @@ $$ \frac{d(V\rho x)}{dt} = w_1 x_1 + w_2 - wx $$
 Türev açılımı ve kütle sadeleştirmesi yapıldığında nihai dinamik denklem elde edilir[cite: 25]:
 
 $$ \rho V \frac{dx}{dt} = w_1(x_1 - x) + w_2(1 - x) $$
----
+```
 # KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
 
 Bu bölüm, dersin eğitmeninin spesifik soru tiplerine (yüksek mertebeli Laplace dönüşümleri, limit teoremleri ve karışım prosesi modelleme) sadık kalınarak hazırlanmış ileri düzey lisans çalışma sorularını içermektedir.
