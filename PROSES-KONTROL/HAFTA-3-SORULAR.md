@@ -111,10 +111,7 @@ flowchart TD
     Gerçek tank seviyesi, başlangıçtaki kararlı hal seviyesi ile sapma miktarının toplamıdır.
     $h(t)=h_s+h'(t)=4+(1-e^{-0.1t})=5-e^{-0.1t}$
     *(Fiziksel Yorum: Vana açılıp tanka daha fazla sıvı girmeye başladığında seviye logaritmik olarak artacak ve $t \to \infty$ anında tank taşmadan tam $5\text{ m}$ seviyesinde yeni bir hidrodinamik dengeye oturacaktır.)*
-    # KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
-
-Bu bölüm, dersin eğitmeninin spesifik soru tiplerine (yüksek mertebeli Laplace dönüşümleri, limit teoremleri ve karışım prosesi modelleme) sadık kalınarak hazırlanmış ileri düzey lisans çalışma sorularını içermektedir.
-
+   
 ---
 # KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
 
