@@ -167,7 +167,8 @@ Türev açılımı ve kütle sadeleştirmesi yapıldığında nihai dinamik denk
 
 $$ \rho V \frac{dx}{dt} = w_1(x_1 - x) + w_2(1 - x) $$
 ```
-# KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
+---
+### KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
 
 Bu bölüm, dersin eğitmeninin spesifik soru tiplerine (yüksek mertebeli Laplace dönüşümleri, limit teoremleri ve karışım prosesi modelleme) sadık kalınarak hazırlanmış ileri düzey lisans çalışma sorularını içermektedir.
 
