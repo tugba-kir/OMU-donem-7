@@ -78,16 +78,16 @@ $$ \frac{d^2x}{dt^2} + 6\frac{dx}{dt} + 8x = 2 $$
 
 **Mühendislik Çözüm Şablonu:**
 1.  **Her iki tarafın Laplace Dönüşümünü al:**
-    $ [s^2X(s) - sx(0) - x'(0)] + 6[sX(s) - x(0)] + 8X(s) = \frac{2}{s} $
+    $[s^2X(s) - sx(0) - x'(0)] + 6[sX(s) - x(0)] + 8X(s) = \frac{2}{s}$
 2.  **Başlangıç koşullarını uygula ve düzenle:**
-    $ X(s)(s^2 + 6s + 8) = \frac{2}{s} \implies X(s) = \frac{2}{s(s+4)(s+2)} $
+    $X(s)(s^2 + 6s + 8) = \frac{2}{s} \implies X(s) = \frac{2}{s(s+4)(s+2)}$
 3.  **Kısmi Kesirlere Ayırma:**
-    $ \frac{2}{s(s+4)(s+2)} = \frac{A}{s} + \frac{B}{s+4} + \frac{C}{s+2} $
+    $\frac{2}{s(s+4)(s+2)} = \frac{A}{s} + \frac{B}{s+4} + \frac{C}{s+2}$
     Payları eşitleyerek: $A = 1/4$, $B = 1/4$, $C = -1/2$ bulunur.
-    $ X(s) = \frac{1/4}{s} + \frac{1/4}{s+4} - \frac{1/2}{s+2} $
+    $X(s) = \frac{1/4}{s} + \frac{1/4}{s+4} - \frac{1/2}{s+2}$
 4.  **Ters Laplace Dönüşümü:**
-    Standart tablo kuralı: $\mathcal{L}^{-1}\{ \frac{1}{s+a} \} = e^{-at}$
-    $ x(t) = \frac{1}{4} + \frac{1}{4}e^{-4t} - \frac{1}{2}e^{-2t} $
+    Standart tablo kuralı: $\mathcal{L}^{-1}\{\frac{1}{s+a}\} = e^{-at}$
+    $x(t) = \frac{1}{4} + \frac{1}{4}e^{-4t} - \frac{1}{2}e^{-2t}$
 
 ### Senaryo 2: Termodinamik Enerji Denkliği Kurulumu
 **Soru:** Isıtmalı CSTR için genel dinamik (unsteady-state) enerji denklemini kurunuz.
@@ -98,8 +98,7 @@ $$ \frac{d^2x}{dt^2} + 6\frac{dx}{dt} + 8x = 2 $$
 3.  **Çıkan Enerji Hızı:** $\rho F C_p (T - T_{ref})$
 4.  **Birikim Hızı:** $\frac{d(\rho V C_p T)}{dt}$
 5.  **Dinamik Matematiksel Model:**
-    $ \rho V C_p \frac{dT}{dt} = \rho F C_p (T_i - T) + Q $
-
+    $\rho V C_p \frac{dT}{dt} = \rho F C_p (T_i - T) + Q$
 ---
 
 
