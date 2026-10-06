@@ -129,3 +129,15 @@ $$ \frac{d^2x}{dt^2} + 6\frac{dx}{dt} + 8x = 2 $$
     *   $f(t)=\delta(t) \implies \mathcal{L}(\delta(t))=1$ (Birim ani darbe için)[cite: 9]
 *   **İntegral Dönüşümü:** Kontrol sistemlerinde (özellikle PID kontrolörlerin İntegral etkisinde) karşılaşılan zaman integrallerini $s$-domenine aktarmak için kullanılır[cite: 12].
     *   $\mathcal{L}(\int_0^t f(t)dt)=\frac{F(s)}{s}$[cite: 12]
+### Senaryo 3: Kimyasal Karışım ve Kütle Denkliği (Kavramsal / Tasarım)
+**Soru:** Sabit hacimli ($V$) bir tam karıştırmalı tanka, sabit $F$ hacimsel debisi ve $C_i$ başlangıç konsantrasyonu ile bir bileşen (solüt) girmektedir. Sistemde kimyasal reaksiyon gerçekleşmediği (inert karışım) varsayılarak, çıkış konsantrasyonunun ($C$) zamana bağlı değişimini (dinamik davranışını) veren temel kütle denkliğini kurunuz[cite: 2, 5].
+
+**Mühendislik Çözüm Şablonu:**
+1.  **Genel Korunum Prensibi:** $Giren K\ddot{u}tle H\imath z\imath - \text{\c{C}}\imath kan K\ddot{u}tle H\imath z\imath + \ddot{U}retim = Birikim H\imath z\imath$[cite: 5]
+2.  **Mühendislik Varsayımları:** Sistemde kimyasal reaksiyon yoktur ($\ddot{U}retim = 0$). Tank tam karıştırmalı ideal CSTR olduğu için tank içindeki konsantrasyon, çıkış konsantrasyonuna eşittir ($C_{\text{\c{c}}\imath k\imath \text{\c{s}}} = C$). Hacim ($V$) ve debi ($F$) sabittir.
+3.  **Giren Bileşen Hızı:** $F \cdot C_i$
+4.  **Çıkan Bileşen Hızı:** $F \cdot C$
+5.  **Birikim Hızı:** $\frac{d(V \cdot C)}{dt}$ (Hacim sabit olduğundan $V$ türev dışına çıkar $\implies V\frac{dC}{dt}$).
+6.  **Nihai Dinamik Matematiksel Model:**
+    $V\frac{dC}{dt} = F \cdot C_i - F \cdot C$
+    *(Sistemi lineer transfer fonksiyonu formuna hazırlamak için denklemin her iki tarafı debiye ($F$) bölünebilir. Bu durumda $V/F$ oranı, sistemin zaman sabiti ($\tau$) olarak tanımlanır.)*
