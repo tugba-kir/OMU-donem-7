@@ -166,7 +166,7 @@ $$ \frac{d(V\rho x)}{dt} = w_1 x_1 + w_2 - wx $$
 Türev açılımı ve kütle sadeleştirmesi yapıldığında nihai dinamik denklem elde edilir[cite: 25]:
 
 $$ \rho V \frac{dx}{dt} = w_1(x_1 - x) + w_2(1 - x) $$
-```
+
 ---
 ### KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
 
