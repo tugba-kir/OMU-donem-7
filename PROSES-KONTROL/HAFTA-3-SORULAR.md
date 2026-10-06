@@ -2,116 +2,170 @@
 
 Bu bölüm, proses kontrol dinamiklerinin matematiksel temellerini ve fiziksel karşılıklarını birleştiren, sınav formatına uygun lisans seviyesi çalışma sorularını içermektedir. Çözümler, ezberden ziyade mühendislik yaklaşımını (modelleme, s-domenine geçiş, analiz) kavramaya yönelik olarak yapılandırılmıştır.
 
+# KMB401 Proses Kontrol - Kapsamlı Sınav ve Vize Hazırlık Portfolyosu
+
+## BÖLÜM 1: BİRİNCİ MERTEBEDEN SİSTEMLER VE BASAMAK ETKİSİ
+
 ### Soru 1: Birinci Mertebeden Sistemlerin Dinamik Analizi ve Son Değer Teoremi
-**Soru:** Kimyasal bir prosesin dinamik davranışı, aşağıdaki birinci mertebeden lineer diferansiyel denklem ile tanımlanmaktadır[cite: 21]:
+**Soru:** Kimyasal bir prosesin dinamik davranışı, aşağıdaki denklem ile tanımlanmaktadır[cite: 21]:
 
-$$2\frac{dy}{dt}+8y=4$$
+$$ 2\frac{dy}{dt} + 8y = 4 $$
 
-Sistemin başlangıç koşulu $y(0)=2$ olarak verilmiştir[cite: 21].
-a) Bu sistemi Laplace dönüşümü kullanarak zaman domeninde ($y(t)$) çözünüz[cite: 21].
-b) Sistemin ulaşacağı yeni kararlı hal (son) değerini fiziksel anlamıyla açıklayarak bulunuz[cite: 21].
+Sistemin başlangıç koşulu $y(0) = 2$ olarak verilmiştir[cite: 21]. Bu sistemi Laplace dönüşümü kullanarak zaman domeninde ($y(t)$) çözünüz ve sistemin ulaşacağı yeni kararlı hal değerini bulunuz[cite: 21].
 
-**Sistem Blok Diyagramı (Simulink/Matlab Gösterimi):**
-```mermaid
-graph LR
-    A((Giriş Etkisi)) -->|Uygulanan Sinyal| B[Proses Transfer Fonksiyonu<br>Dinamik Yanıt]
-    B -->|Zamana Bağlı Değişim| C((Çıkış:<br>y t))
-    
-    style B fill:#e6f3ff,stroke:#31708f,stroke-width:2px
-```
+**Mühendislik Çözüm Adımları:**
 
-**Eğitici Mühendislik Çözümü:**
+**Adım 1: Diferansiyel Denklemin s-Domenine Aktarılması**
+Zaman domenindeki türevsel değişimleri çözebilmek için Laplace dönüşümü alınır. Başlangıç koşulu doğrudan işleme dahil edilir.
 
-1.  **Diferansiyel Denklemin s-Domenine Aktarılması (Laplace Dönüşümü):**
-    Zaman ($t$) domenindeki türevsel değişimleri cebirsel olarak çözebilmek için denklemin her iki tarafının Laplace dönüşümü alınır. Başlangıç koşulunu ($y(0)=2$) doğrudan işleme dahil etmeliyiz.
-    $2[sY(s)-y(0)]+8Y(s)=\frac{4}{s}$
-    $2[sY(s)-2]+8Y(s)=\frac{4}{s}$
+$$ 2[s Y(s) - y(0)] + 8 Y(s) = \frac{4}{s} $$
 
-2.  **Cebirsel Düzenleme ve Y(s)'in Yalnız Bırakılması:**
-    Sistemin çıkış fonksiyonu $Y(s)$'i bir tarafa toplayarak denklemi çözülebilir kesir formuna getiriyoruz.
-    $2sY(s)-4+8Y(s)=\frac{4}{s}$
-    $Y(s)(2s+8)=\frac{4}{s}+4=\frac{4s+4}{s}$
-    $Y(s)=\frac{4s+4}{s(2s+8)}=\frac{2s+2}{s(s+4)}$
+$$ 2[s Y(s) - 2] + 8 Y(s) = \frac{4}{s} $$
 
-3.  **Kısmi Kesirlere Ayırma (Partial Fractions):**
-    Ters Laplace tablosundaki standart formlara ulaşmak için karmaşık kesri basit bileşenlere ayırıyoruz.
-    $\frac{2s+2}{s(s+4)}=\frac{A}{s}+\frac{B}{s+4}$
-    Payları eşitleyerek: $A(s+4)+Bs=2s+2$
-    *   $s=0$ için: $4A=2 \implies A=0.5$
-    *   $s=-4$ için: $-4B=-8+2 \implies B=1.5$
-    
-    Kısmi kesir formu: $Y(s)=\frac{0.5}{s}+\frac{1.5}{s+4}$
+**Adım 2: Cebirsel Düzenleme ve Y(s)'in Yalnız Bırakılması**
+Sistemin çıkış fonksiyonu $Y(s)$ bir tarafa toplanarak denklem çözülebilir kesir formuna getirilir.
 
-4.  **Zaman Domenine Geri Dönüş (Ters Laplace):**
-    Bulduğumuz $s$-domeni fonksiyonunu, fiziksel dünyada karşılığı olan zamana bağlı bir fonksiyona ($y(t)$) dönüştürüyoruz.
-    $y(t)=0.5+1.5e^{-4t}$
-    *(Öğretici Not: Buradaki $e^{-4t}$ terimi, sistemin başlangıçtaki "geçici (transient)" tepkisini gösterir ve zamanla sönümlenir.)*
+$$ 2s Y(s) - 4 + 8 Y(s) = \frac{4}{s} $$
 
-5.  **Son Değer (Final Value) Analizi:**
-    Sistem yeterince uzun süre çalıştırıldığında ($t \to \infty$), geçici rejim biter ve yeni bir kararlı hale (steady-state) ulaşılır[cite: 21].
-    $y(\infty)=0.5+1.5e^{-\infty}=0.5+0=0.5$
-    *(Sistem 2 birimlik başlangıç durumundan harekete geçmiş, dinamik tepkisini vermiş ve $t=\infty$ anında $0.5$ birimlik yeni dengesine oturmuştur.)*
+$$ Y(s)(2s + 8) = \frac{4s + 4}{s} $$
+
+$$ Y(s) = \frac{2s + 2}{s(s + 4)} $$
+
+**Adım 3: Kısmi Kesirlere Ayırma**
+Ters Laplace tablosundaki standart formlara ulaşmak için kesir basit bileşenlere ayrılır.
+
+$$ \frac{2s + 2}{s(s + 4)} = \frac{A}{s} + \frac{B}{s + 4} $$
+
+Payları eşitleyerek ( $A(s + 4) + Bs = 2s + 2$ ) çözüm yapıldığında $A = 0.5$ ve $B = 1.5$ bulunur.
+
+$$ Y(s) = \frac{0.5}{s} + \frac{1.5}{s + 4} $$
+
+**Adım 4: Zaman Domenine Geri Dönüş ve Son Değer Analizi**
+Ters Laplace alınarak zamana bağlı fonksiyon elde edilir:
+
+$$ y(t) = 0.5 + 1.5 e^{-4t} $$
+
+Sistem yeterince uzun süre çalıştırıldığında ( $t \to \infty$ ), geçici rejim biter ve yeni bir kararlı hale ulaşılır[cite: 21].
+
+$$ y(\infty) = 0.5 + 0 = 0.5 $$
 
 ---
 
-### Soru 2: Sıvı Seviye Kontrol Sistemi ve Basamak (Step) Etki Analizi
-**Soru:** Kesit alanı $A=5\text{ m}^2$ olan bir prosese $q_i$ hacimsel debisi ile sıvı beslenmektedir[cite: 21]. Çıkış debisi sıvı seviyesi ($h$) ile vananın direncine ($R$) bağlı olarak $q_o=\frac{h}{R}$ kuralına göre değişmektedir[cite: 21]. Vana direnci $R=2\text{ dk/m}^2$'dir[cite: 21]. Proses başlangıçta $q_{is}=2\text{ m}^3/\text{dk}$ giriş debisi ile kararlı (steady-state) haldedir.
-a) Sıvı seviyesinin giriş debisine oranını veren transfer fonksiyonunu ($\frac{H'(s)}{Q_i'(s)}$) çıkarınız[cite: 20, 21].
-b) Giriş debisinde aniden meydana gelen $0.5\text{ m}^3/\text{dk}$'lık bir basamak artışı (step change) sonrasında sistemin göstereceği seviye değişim profilini ($h(t)$) bulunuz[cite: 20, 21].
+### Soru 2: Sıvı Seviye Kontrol Sistemi Analizi
+**Soru:** Kesit alanı $A = 5$ metrekare olan bir prosese $q_i$ debisi ile sıvı beslenmektedir[cite: 21]. Çıkış debisi vananın direncine bağlı olarak $q_o = h / R$ kuralına göre değişmektedir ($R = 2$)[cite: 21]. Proses başlangıçta $2$ metreküp/dakika giriş debisi ile kararlı haldedir. Giriş debisinde aniden meydana gelen $0.5$ birimlik basamak artışı sonrasında sistemin seviye profili nasıl değişir[cite: 20, 21]?
 
-**Proses Akım Şeması (Aspen / ChemCAD PFD Gösterimi):**
-```mermaid
-flowchart TD
-    IN((Besleme Akımı<br>q_i)) -->|Giriş| TANK[Tam Karıştırmalı Tank<br>Kesit Alanı: A = 5 m²<br>Sıvı Seviyesi: h]
-    TANK -->|Yerçekimi Akışı| VALVE(Çıkış Vanası<br>Direnç: R = 2 dk/m²)
-    VALVE --> OUT((Çıkış Akımı<br>q_o = h/R))
-    
-    style TANK fill:#d9edf7,stroke:#31708f,stroke-width:2px
-    style VALVE fill:#fcf8e3,stroke:#8a6d3b,stroke-width:2px
-```
+**Mühendislik Çözüm Adımları:**
 
-**Eğitici Mühendislik Çözümü:**
+**Adım 1: Başlangıç Kararlı Hal Koşulları**
+Bozucu etki gelmeden önce, giren sıvı miktarı çıkan sıvı miktarına eşittir. Tank başlangıçta 4 metre seviyesinde dengededir.
 
-1.  **Başlangıç Kararlı Hal (Steady-State) Koşullarının Belirlenmesi:**
-    Herhangi bir bozucu etki gelmeden önce, tanka giren sıvı miktarı çıkan sıvı miktarına tam eşittir ve seviye sabittir.
-    $q_{is}=q_{os}=\frac{h_s}{R} \implies 2=\frac{h_s}{2} \implies h_s=4\text{ m}$
-    *(Tank başlangıçta 4 metre sıvı seviyesinde dengededir.)*
+$$ q_{is} = q_{os} = \frac{h_s}{R} \implies 2 = \frac{h_s}{2} \implies h_s = 4 $$
 
-2.  **Fiziksel Kütle Denkliği ve Sapma Değişkenleri (Deviation Variables):**
-    Genel korunum yasasına göre: $Giren - \text{\c{C}}\imath kan = Birikim$[cite: 20]
-    $A\frac{dh}{dt}=q_i-\frac{h}{R}$
-    Kontrol mühendisliğinde analizleri kolaylaştırmak için mutlak değerler yerine "kararlı halden sapma miktarları" kullanılır. Sapma değişkeni: $h'=h-h_s$ ve $q_i'=q_i-q_{is}$.
-    Dinamik denklemden kararlı hal denklemi çıkarıldığında sapma modeli elde edilir:
-    $A\frac{dh'}{dt}=q_i'-\frac{h'}{R}$
+**Adım 2: Fiziksel Kütle Denkliği ve Sapma Modeli**
+Genel kütle korunum yasasına göre (Giriş - Çıkış = Birikim) denklem kurulur[cite: 20].
 
-3.  **Transfer Fonksiyonunun Türetilmesi:**
-    Sapma modelinin (başlangıç şartı $h'(0)=0$ kabulüyle) Laplace dönüşümü alınır[cite: 20]. Bu kabul, sistemin tam $t=0$ anında dengede olduğunu belirtir.
-    $AsH'(s)=Q_i'(s)-\frac{H'(s)}{R}$
-    $H'(s)(As+\frac{1}{R})=Q_i'(s) \implies \frac{H'(s)}{Q_i'(s)}=\frac{R}{ARs+1}$
-    Sistem parametreleri ($A=5$, $R=2$) yerine konulduğunda transfer fonksiyonu:
-    $G_p(s)=\frac{H'(s)}{Q_i'(s)}=\frac{2}{10s+1}$
-    *(Öğretici Not: Bu format $\frac{K_p}{\tau s+1}$ şeklindeki standart 1. mertebe transfer fonksiyonudur. Sistemin kazancı $K_p=2$, zaman sabiti $\tau=10$ dakikadır.)*
+$$ A\frac{dh}{dt} = q_i - \frac{h}{R} $$
 
-4.  **Basamak (Step) Etki Sistem Yanıtının Çözümlenmesi:**
-    Giriş debisi $2\text{ m}^3/\text{dk}$'dan $2.5\text{ m}^3/\text{dk}$'ya çıktığı için oluşan sapma (hata):
-    $\Delta q_i=2.5-2=0.5\text{ m}^3/\text{dk}$[cite: 20, 21]
-    Anlık kalıcı bir değişim olduğu için Laplace karşılığı bir basamak fonksiyonudur[cite: 20, 21]: $Q_i'(s)=\frac{0.5}{s}$
-    Bunu transfer fonksiyonunda yerine koyduğumuzda:
-    $H'(s)=(\frac{2}{10s+1})(\frac{0.5}{s})=\frac{1}{s(10s+1)}=\frac{0.1}{s(s+0.1)}$
+Sapma değişkenleri ( $h' = h - h_s$ ve $q_i' = q_i - q_{is}$ ) kullanılarak dinamik model yazılır:
 
-5.  **Kısmi Kesirler ve Ters Laplace:**
-    $\frac{0.1}{s(s+0.1)}=\frac{C_1}{s}+\frac{C_2}{s+0.1}$
-    *   $s=0$ için $C_1=1$
-    *   $s=-0.1$ için $C_2=-1$
-    
-    $H'(s)=\frac{1}{s}-\frac{1}{s+0.1}$
-    Ters Laplace ile sapma fonksiyonu bulunur: $h'(t)=1-e^{-0.1t}$
+$$ A\frac{dh'}{dt} = q_i' - \frac{h'}{R} $$
 
-6.  **Mutlak (Gerçek) Seviye Profili:**
-    Gerçek tank seviyesi, başlangıçtaki kararlı hal seviyesi ile sapma miktarının toplamıdır.
-    $h(t)=h_s+h'(t)=4+(1-e^{-0.1t})=5-e^{-0.1t}$
-    *(Fiziksel Yorum: Vana açılıp tanka daha fazla sıvı girmeye başladığında seviye logaritmik olarak artacak ve $t \to \infty$ anında tank taşmadan tam $5\text{ m}$ seviyesinde yeni bir hidrodinamik dengeye oturacaktır.)*
-   
+**Adım 3: Transfer Fonksiyonu ve Basamak Etki**
+Başlangıç şartı sıfır kabul edilerek Laplace dönüşümü alınır ve sistem parametreleri ($A=5, R=2$) yerine konur[cite: 20]. 
+
+$$ \frac{H'(s)}{Q_i'(s)} = \frac{R}{ARs + 1} = \frac{2}{10s + 1} $$
+
+Basamak artışı $0.5$ olduğu için Laplace karşılığı $0.5 / s$ olur[cite: 20, 21].
+
+$$ H'(s) = \left( \frac{2}{10s + 1} \right) \left( \frac{0.5}{s} \right) = \frac{0.1}{s(s + 0.1)} $$
+
+**Adım 4: Kısmi Kesirler ve Gerçek Seviye**
+Kısmi kesirlere ayrılıp ters Laplace alındığında sapma fonksiyonu bulunur:
+
+$$ h'(t) = 1 - e^{-0.1t} $$
+
+Gerçek tank seviyesi, başlangıçtaki seviye ile sapma miktarının toplamıdır:
+
+$$ h(t) = h_s + h'(t) = 5 - e^{-0.1t} $$
+
+---
+
+## BÖLÜM 2: İLERİ DÜZEY VİZE SORULARI
+
+### Soru 3: Üçüncü Mertebeden Laplace Analizi (35 Puan)
+**Soru:** Kimyasal bir reaktörün davranışı aşağıdaki denklem ile ifade edilmektedir[cite: 26]:
+
+$$ \frac{d^3x}{dt^3} - 7\frac{dx}{dt} - 6x = 5 $$
+
+Başlangıç koşulları sıfırdır[cite: 26]. Sisteme uygulanan 5 birimlik basamak etki altındaki zaman yanıtını bulunuz[cite: 26, 27].
+
+**Mühendislik Çözüm Adımları:**
+
+**Adım 1: Laplace Dönüşümü ve Karakteristik Denklem**
+Başlangıç koşulları sıfır olduğundan türev kuralları doğrudan uygulanır[cite: 26, 27].
+
+$$ s^3 X(s) - 7s X(s) - 6 X(s) = \frac{5}{s} $$
+
+$$ X(s)[s^3 - 7s - 6] = \frac{5}{s} $$
+
+**Adım 2: Çarpanlara Ayırma ve Transfer Fonksiyonu**
+Polinom bölmesi ile $s^3 - 7s - 6 = 0$ denkleminin kökleri $(s+1)$, $(s-3)$, ve $(s+2)$ olarak bulunur[cite: 26, 27].
+
+$$ X(s) = \frac{5}{s(s+1)(s+2)(s-3)} $$
+
+**Adım 3: Kısmi Kesirlere Ayırma İşlemi**
+
+$$ \frac{5}{s(s+1)(s+2)(s-3)} = \frac{A}{s} + \frac{B}{s+1} + \frac{C}{s+2} + \frac{D}{s-3} $$
+
+Kök yerine koyma yöntemi ile katsayılar bulunur[cite: 26]. Ters Laplace dönüşümü ile $x(t)$ elde edilir[cite: 26, 27].
+
+---
+
+### Soru 4: Başlangıç ve Son Değer Teoremleri (25 Puan)
+**Soru:** Kompleks bir prosesin çıkış fonksiyonu aşağıda verilmiştir[cite: 28]:
+
+$$ Y(s) = \frac{s^4 - 6s^2 + 9s - 8}{s(s-2)(s^3 + 2s^2 - s - 2)} $$
+
+Limit teoremleri yardımıyla başlangıç ve son değerleri bulunuz[cite: 28].
+
+**Mühendislik Çözüm Adımları:**
+
+**Adım 1: Başlangıç Değer Teoremi**
+Kural: limit ( $s \to \infty$ ) için $sY(s)$ hesaplanır[cite: 28]. Pay ve payda en yüksek dereceli terimlere bölünür.
+
+$$ \lim_{s \to \infty} sY(s) = \frac{s^4 - 6s^2 + 9s - 8}{s^4 - 5s^2 + 4} = 1 $$
+
+**Adım 2: Son Değer Teoremi**
+Kural: limit ( $s \to 0$ ) için $sY(s)$ hesaplanır[cite: 28]. $s=0$ değeri fonksiyonda yerine yazılır.
+
+$$ \lim_{s \to 0} \frac{s^4 - 6s^2 + 9s - 8}{(s-2)(s^3 + 2s^2 - s - 2)} = \frac{-8}{(-2)(-2)} = -2 $$
+
+---
+
+### Soru 5: Proses Modelleme ve Tasarım (40 Puan)
+**Soru:** Akım 1 (kütlesel debisi $w_1$, derişimi $x_1$) ve Akım 2 (debisi $w_2$, derişimi $x_2 = 1$) karıştırılmaktadır[cite: 23]. 
+a) İstenilen hedef bileşime ($x_R$) ulaşmak için $w_2$ debisinin formülü nedir[cite: 23]?
+b) Sistemin yatışkın olmayan kütle denkliğini çıkarınız[cite: 25].
+
+**Mühendislik Çözüm Adımları:**
+
+**Adım 1: Kararlı Hal Kütle Denklikleri**
+Toplam ve bileşen kütle denklikleri yazılır[cite: 23, 25]:
+
+$$ w_1 x_{1s} + w_2(1) = (w_1 + w_2)x_R $$
+
+Denklem $w_2$ için düzenlenir[cite: 23]:
+
+$$ w_2 = w_1 \frac{x_R - x_{1s}}{1 - x_R} $$
+
+**Adım 2: Yatışkın Olmayan Hal Modeli**
+Bileşen kütle birikimi türevsel olarak ifade edilir[cite: 25]:
+
+$$ \frac{d(V\rho x)}{dt} = w_1 x_1 + w_2 - wx $$
+
+Türev açılımı ve kütle sadeleştirmesi yapıldığında nihai dinamik denklem elde edilir[cite: 25]:
+
+$$ \rho V \frac{dx}{dt} = w_1(x_1 - x) + w_2(1 - x) $$
 ---
 # KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
 
