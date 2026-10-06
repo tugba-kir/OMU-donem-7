@@ -117,13 +117,19 @@ Bu bölüm, dersin eğitmeninin spesifik soru tiplerine (yüksek mertebeli Lapla
 
 ---
 
+# KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
+
+Bu bölüm, dersin eğitmeninin spesifik soru tiplerine (yüksek mertebeli Laplace dönüşümleri, limit teoremleri ve karışım prosesi modelleme) sadık kalınarak hazırlanmış ileri düzey lisans çalışma sorularını içermektedir.
+
+---
+
 ### Soru 1: Üçüncü Mertebeden Sistem Dinamiği ve Laplace Analizi (35 Puan)
 **Soru:** Kimyasal bir reaktörün dinamik davranışı, aşağıdaki 3. mertebeden lineer diferansiyel denklem ile ifade edilmektedir[cite: 26]:
 
-$$ \frac{d^3x}{dt^3} - 7\frac{dx}{dt} - 6x = 5 $$
+$$\frac{d^3x}{dt^3} - 7\frac{dx}{dt} - 6x = 5$$
 
 Sistemin başlangıç koşulları $x(0)=0$, $x'(0)=0$ ve $x''(0)=0$ olarak verilmiştir[cite: 26]. 
-Sisteme $t=0$ anında uygulanan $5$ birimlik basamak (step) etki altındaki zaman yanıtını ($x(t)$) Laplace dönüşümü ve kısmi kesirlere ayırma yöntemini kullanarak elde ediniz[cite: 26, 27].
+Sisteme $t=0$ anında uygulanan $5$ birimlik basamak (step) etki altındaki zaman yanıtını ($x(t)$ fonksiyonunu) Laplace dönüşümü ve kısmi kesirlere ayırma yöntemini kullanarak elde ediniz[cite: 26, 27].
 
 **Mühendislik Çözüm Şablonu:**
 1.  **Her İki Tarafın Laplace Dönüşümünün Alınması:**
@@ -140,8 +146,51 @@ Sisteme $t=0$ anında uygulanan $5$ birimlik basamak (step) etki altındaki zama
     $X(s) = \frac{5}{s(s+1)(s+2)(s-3)}$
 4.  **Kısmi Kesirlere Ayırma İşlemi:**
     $\frac{5}{s(s+1)(s+2)(s-3)} = \frac{A}{s} + \frac{B}{s+1} + \frac{C}{s+2} + \frac{D}{s-3}$
-    Paylar eşitlenerek sabitler (A, B, C, D) bulunur (Hocanın notlarındaki matris/kök yerine koyma yöntemi ile çözülür)[cite: 26].
-    *(Örnek kök bulma: $s=0 \implies A(1)(2)(-3)=5 \implies -6A=5 \implies A=-5/6$)*
+    Paylar eşitlenerek sabitler bulunur (Hocanın notlarındaki kök yerine koyma yöntemi ile çözülür)[cite: 26]. Örnek kök bulma adımı:
+    *   $s=0$ için: $A(1)(2)(-3)=5 \implies -6A=5 \implies A=-5/6$
+5.  **Ters Laplace ile Zaman Domenine Geçiş:**
+    Bulunan katsayılarla ters Laplace standart formülü ($e^{at}$) kullanılarak sistemin açık dinamik yanıtı $x(t)$ elde edilir[cite: 26, 27].
+
+---
+
+### Soru 2: Başlangıç ve Son Değer Teoremleri (25 Puan)
+**Soru:** Kompleks bir endüstriyel prosesin $s$-domenindeki çıkış fonksiyonu $Y(s)$ aşağıda verilmiştir[cite: 28]:
+
+$$Y(s) = \frac{s^4 - 6s^2 + 9s - 8}{s(s-2)(s^3 + 2s^2 - s - 2)}$$
+
+Bu sistemin zaman domenindeki karşılığını ($y(t)$) açıkça çözmeye gerek kalmadan, sistemin tam $t=0$ anındaki (başlangıç) ve sonsuz zamandaki ($t \to \infty$, yatışkın hal) değerlerini limit teoremleri yardımıyla bulunuz[cite: 28].
+
+# KMB401 Proses Kontrol - Vize (Ara Sınav) Hazırlık Soruları
+
+Bu bölüm, dersin eğitmeninin spesifik soru tiplerine (yüksek mertebeli Laplace dönüşümleri, limit teoremleri ve karışım prosesi modelleme) sadık kalınarak hazırlanmış ileri düzey lisans çalışma sorularını içermektedir.
+
+---
+
+### Soru 1: Üçüncü Mertebeden Sistem Dinamiği ve Laplace Analizi (35 Puan)
+**Soru:** Kimyasal bir reaktörün dinamik davranışı, aşağıdaki 3. mertebeden lineer diferansiyel denklem ile ifade edilmektedir[cite: 26]:
+
+$$ \frac{d^3x}{dt^3} - 7\frac{dx}{dt} - 6x = 5 $$
+
+Sistemin başlangıç koşulları $x(0)=0$, $x'(0)=0$ ve $x''(0)=0$ olarak verilmiştir[cite: 26]. 
+Sisteme $t=0$ anında uygulanan $5$ birimlik basamak (step) etki altındaki zaman yanıtını ($x(t)$ fonksiyonunu) Laplace dönüşümü ve kısmi kesirlere ayırma yöntemini kullanarak elde ediniz[cite: 26, 27].
+
+**Mühendislik Çözüm Şablonu:**
+1.  **Her İki Tarafın Laplace Dönüşümünün Alınması:**
+    Türev kuralları uygulanarak sistem $s$-domenine geçirilir[cite: 27].
+    $ [s^3X(s)-s^2x(0)-sx'(0)-x''(0)] - 7[sX(s)-x(0)] - 6X(s) = \frac{5}{s} $
+2.  **Başlangıç Koşullarının Uygulanması:**
+    Tüm başlangıç koşulları sıfır olduğundan denklem sadeleşir[cite: 26].
+    $ s^3X(s) - 7sX(s) - 6X(s) = \frac{5}{s} $
+    $ X(s)[s^3 - 7s - 6] = \frac{5}{s} $
+3.  **Karakteristik Denklemin Çarpanlarına Ayrılması:**
+    Polinom bölmesi veya deneme yoluyla $s^3-7s-6=0$ denkleminin kökleri bulunur[cite: 26, 27]. $s=-1$ için denklem sıfırlanır, dolayısıyla $(s+1)$ bir çarpandır.
+    $ s^3-7s-6 = (s+1)(s^2-s-6) = (s+1)(s-3)(s+2) $
+    Buna göre transfer fonksiyonu:
+    $ X(s) = \frac{5}{s(s+1)(s+2)(s-3)} $
+4.  **Kısmi Kesirlere Ayırma İşlemi:**
+    $ \frac{5}{s(s+1)(s+2)(s-3)} = \frac{A}{s} + \frac{B}{s+1} + \frac{C}{s+2} + \frac{D}{s-3} $
+    Paylar eşitlenerek sabitler bulunur (Hocanın notlarındaki kök yerine koyma yöntemi ile çözülür)[cite: 26]. Örnek kök bulma adımı:
+    *   $s=0$ için: $A(1)(2)(-3)=5 \implies -6A=5 \implies A=-5/6$
 5.  **Ters Laplace ile Zaman Domenine Geçiş:**
     Bulunan katsayılarla ters Laplace standart formülü ($e^{at}$) kullanılarak sistemin açık dinamik yanıtı $x(t)$ elde edilir[cite: 26, 27].
 
@@ -157,15 +206,14 @@ Bu sistemin zaman domenindeki karşılığını ($y(t)$) açıkça çözmeye ger
 **Mühendislik Çözüm Şablonu:**
 1.  **Başlangıç Değer Teoremi (Initial Value Theorem):**
     Kural: $\lim_{t \to 0} y(t) = \lim_{s \to \infty} sY(s)$[cite: 28]
-    $sY(s) = \frac{s(s^4 - 6s^2 + 9s - 8)}{s(s-2)(s^3 + 2s^2 - s - 2)} = \frac{s^4 - 6s^2 + 9s - 8}{s^4 - 5s^2 + 4}$
-    *(Payda çarpımından en yüksek dereceli terim $s^4$ gelir)*
-    Limit $s \to \infty$ için pay ve payda en yüksek dereceli $s^4$ parantezine alınır (veya $s^4$'e bölünür)[cite: 28].
-    $\lim_{s \to \infty} sY(s) = \frac{1 - 0 + 0 - 0}{1 - 0 + 0} = 1$ (Başlangıç Değeri)[cite: 28]
+    $ sY(s) = \frac{s(s^4 - 6s^2 + 9s - 8)}{s(s-2)(s^3 + 2s^2 - s - 2)} = \frac{s^4 - 6s^2 + 9s - 8}{s^4 - 5s^2 + 4} $
+    Limit $s \to \infty$ için pay ve payda en yüksek dereceli $s^4$ parantezine alınır[cite: 28].
+    $ \lim_{s \to \infty} sY(s) = \frac{1 - 0 + 0 - 0}{1 - 0 + 0} = 1 $ (Başlangıç Değeri)[cite: 28]
 
 2.  **Son Değer Teoremi (Final Value Theorem):**
     Kural: $\lim_{t \to \infty} y(t) = \lim_{s \to 0} sY(s)$[cite: 28]
     Yine $s$ çarpanları sadeleştirildikten sonra $s=0$ değeri fonksiyonda doğrudan yerine yazılır[cite: 28].
-    $\lim_{s \to 0} \frac{s^4 - 6s^2 + 9s - 8}{(s-2)(s^3 + 2s^2 - s - 2)} = \frac{-8}{(-2)(-2)} = \frac{-8}{4} = -2$ (Son Değer)[cite: 28]
+    $ \lim_{s \to 0} \frac{s^4 - 6s^2 + 9s - 8}{(s-2)(s^3 + 2s^2 - s - 2)} = \frac{-8}{(-2)(-2)} = \frac{-8}{4} = -2 $ (Son Değer)[cite: 28]
 
 ---
 
@@ -180,7 +228,8 @@ c) Girdi derişimi ($x_1$) değiştiğinde, çıkış bileşimini $x_R$'de tutab
     Toplam kütle denkliği: $w = w_1 + w_2$[cite: 23, 25]
     Bileşen kütle denkliği: $w_1x_{1s} + w_2(1) = wx_R$[cite: 23]
     Birinci denklem ikincide yerine yazılırsa: $w_1x_{1s} + w_2 = (w_1 + w_2)x_R$[cite: 23]
-    Denklem $w_2$ için düzenlendiğinde: $w_2 = w_1 \frac{x_R - x_{1s}}{1 - x_R}$ bulunur[cite: 23].
+    Denklem $w_2$ için düzenlendiğinde:
+    $ w_2 = w_1 \frac{x_R - x_{1s}}{1 - x_R} $[cite: 23]
 
 2.  **Yatışkın Olmayan Hal Dinamik Modeli (b Şıkkı):**
     Genel Prensip: $Giren - \text{\c{C}}\imath kan = Birikim$[cite: 25]
@@ -188,10 +237,10 @@ c) Girdi derişimi ($x_1$) değiştiğinde, çıkış bileşimini $x_R$'de tutab
     A Bileşeni Kütle Birikimi: $\frac{d(V\rho x)}{dt} = w_1x_1 + w_2x_2 - wx$[cite: 25]
     Türev açılımı yapılır: $\rho V\frac{dx}{dt} + x\frac{d(V\rho)}{dt} = w_1x_1 + w_2(1) - wx$[cite: 25]
     Toplam kütle birikimi terimi yerine yazıldığında dinamik model elde edilir:
-    $\rho V\frac{dx}{dt} + x(w_1+w_2-w) = w_1x_1 + w_2 - wx \implies \rho V\frac{dx}{dt} = w_1(x_1-x) + w_2(1-x)$[cite: 25]
+    $ \rho V\frac{dx}{dt} + x(w_1+w_2-w) = w_1x_1 + w_2 - wx \implies \rho V\frac{dx}{dt} = w_1(x_1-x) + w_2(1-x) $[cite: 25]
 
 3.  **Proses Kontrol Stratejisi ve Şeması (c Şıkkı):**
-    Bozucu etken $x_1$'in sisteme girmeden önce ölçülüp, hata oluşmadan önce müdahale edilmesini sağlayan **İleri Beslemeli (Feedforward)** benzeri bir strateji uygulanmalıdır (Notlardaki Yöntem 1)[cite: 24]. $x_1$ çok yüksek olduğunda kontrolcü $w_2$'yi azaltmalı, $x_1$ düştüğünde ise $w_2$'yi artırmalıdır[cite: 24].
+    Bozucu etken $x_1$'in sisteme girmeden önce ölçülüp, hata oluşmadan önce müdahale edilmesini sağlayan **İleri Beslemeli (Feedforward)** benzeri bir strateji uygulanmalıdır[cite: 24]. $x_1$ çok yüksek olduğunda kontrolcü $w_2$'yi azaltmalı, $x_1$ düştüğünde ise $w_2$'yi artırmalıdır[cite: 24].
 
 ```mermaid
 graph TD
@@ -206,4 +255,3 @@ graph TD
     style TANK fill:#e8f4f8,stroke:#31708f,stroke-width:2px
     style AC fill:#fcf8e3,stroke:#8a6d3b,stroke-width:2px
 ```
-*(Grafik Açıklaması: Bileşik kontrol edici (AC), girdi akımındaki değişimi algılar algılamaz valf direncini değiştirerek saf A miktarını ($w_2$) ayarlar ve sistemi korur[cite: 24].)*
