@@ -70,3 +70,59 @@ flowchart LR
     D[Buhar Girişi: Debi mb, Isı Q] --> B
     
     style B fill:#f9f,stroke:#333,stroke-width:2px
+
+### Hafta 1 Ek Notlar: Proses Türleri ve Sapma Değişkenleri (Tahta Notları)[cite: 15]
+
+Hocanın ilk hafta tahtada özellikle vurguladığı üzere, proses kontrol hesaplamalarında sistemlerin termodinamik ve kinetik davranışları belirli çalışma rejimlerine ayrılır.
+
+**1. Proses Türleri Sınıflandırması:**[cite: 15]
+*   **Kesikli (Batch) Prosesler:** Sisteme başlangıçta reaktantların yüklendiği ve işlemin sonunda ürünlerin alındığı, zamanla değişimin sürekli olduğu sistemler.
+*   **Sürekli (Continuous) Prosesler:** Sisteme kütle ve enerji giriş-çıkışının aralıksız devam ettiği sistemler.
+*   **Karma / Yarı Kesikli (Semi-batch) Prosesler:** Sürekli ve kesikli operasyonların bir arada kullanıldığı sistemler.
+
+**2. Kararlı ve Kararlı Olmayan Durum Analizi:**[cite: 15]
+*   **Kararlı Hal (Steady-State / Yatışkın / Stabil):** Sistem değişkenlerinin (sıcaklık, seviye vb.) zamana bağlı değişiminin olmadığı durumdur. Matematiksel olarak giren ve çıkan kütle/enerji birbirine eşittir (Üretim veya tüketim yoksa Giren = Çıkan)[cite: 15].
+*   **Kararlı Olmayan Hal (Unsteady-State / Dinamik / Yatışkın Olmayan):** Değişkenlerin zamanın bir fonksiyonu olarak değiştiği durumdur[cite: 15]. Dinamik modellerin çözümü bu hal üzerinden yapılır.
+
+**3. Sapma Değişkeni (Deviation Variable) ve Hata Kavramı:**[cite: 15]
+Proses kontrolünde sistemin hedeften ne kadar uzaklaştığını belirlemek için "Kararlı Olmayan Hal - Kararlı Hal" farkı alınır. Elde edilen bu fark, **Sapma Değişkeni (Hata)** cinsinden ifade edilir. Transfer fonksiyonları elde edilirken diferansiyel denklemler bu sapma değişkenleri cinsinden yazılır ve ardından $s$-domenine geçiş için Laplace Dönüşümleri, zaman domenine geri dönmek için ise Ters Laplace Dönüşümleri uygulanır[cite: 15]. Tipik proses uygulamaları ısıtma, sıvı seviyesi ve sıcaklık ölçümü üzerinedir[cite: 15].
+
+---
+
+## ADIM 2: KRİTİK HESAPLAMA VE SINAV SENARYOLARI (Kalan Kısım)
+
+### Senaryo 1: Diferansiyel Denklem Çözümü ve Kısmi Kesirlere Ayırma Yöntemi (Hesaplama)
+
+*(...Çözüm Adım 2'den devam)*
+2.  **Başlangıç koşullarını yerine koy ve denklemi düzenle:**
+    $$s^2X(s) + 6sX(s) + 8X(s) = \frac{2}{s}$$
+[cite: 12]
+    $$X(s)(s^2 + 6s + 8) = \frac{2}{s} \implies X(s) = \frac{2}{s(s^2+6s+8)} = \frac{2}{s(s+4)(s+2)}$$
+[cite: 12]
+
+3.  **Kısmi Kesirlere Ayırma (Partial Fractions):**
+    $$\frac{2}{s(s+4)(s+2)} = \frac{A}{s} + \frac{B}{s+4} + \frac{C}{s+2}$$
+[cite: 12]
+    Payları eşitlersek: $A(s^2+6s+8) + B(s^2+2s) + C(s^2+4s) = 2$[cite: 12]
+    *   $s = 0 \text{ için } \implies 8A = 2 \implies A = 1/4$[cite: 13]
+    *   $s = -4 \text{ için } \implies 8B = 2 \implies B = 1/4$[cite: 13]
+    *   $s = -2 \text{ için } \implies -4C = 2 \implies C = -1/2$[cite: 13]
+    Bulunan katsayıları yerine koyduğumuzda:
+    $$X(s) = \frac{1/4}{s} + \frac{1/4}{s+4} - \frac{1/2}{s+2}$$
+[cite: 13]
+
+4.  **Ters Laplace (Inverse Laplace) Dönüşümü ile zaman domenine geçiş:**
+    Standart tablo kuralı: $\mathcal{L}^{-1}\left\{\frac{1}{s+a}\right\} = e^{-at}$[cite: 13]
+    $$x(t) = \frac{1}{4} + \frac{1}{4}e^{-4t} - \frac{1}{2}e^{-2t}$$
+[cite: 13]
+
+### Senaryo 2: Termodinamik Enerji Denkliği Kurulumu (Kavramsal / Tasarım)
+
+**Soru:** Isıtmalı, tam karıştırmalı sürekli bir tank (CSTR idealizasyonu) için; giriş debisi ($F$), giriş sıcaklığı ($T_i$), tank hacmi ($V$), sıvı yoğunluğu ($\rho$) ve özgül ısı kapasitesi ($C_p$) sabit kabul edilerek genel dinamik (unsteady-state) enerji denklemini kurunuz. Buhardan sisteme aktarılan birim zamandaki ısı akısını $Q$ alınız.[cite: 6, 7]
+
+**Mühendislik Çözüm Şablonu:**
+1.  **Genel Korunum Prensibi:** $Giren Enerji - Çıkan Enerji + Üretilen Enerji = Birikim$[cite: 5]
+2.  Sistemde kimyasal reaksiyon yoktur, bu sebeple üretim terimi sıfırdır.
+3.  **Giren Enerji Hızı:** $\rho F C_p (T_i - T_{ref}) + Q$
+4.  **Çıkan Enerji Hızı:** $\rho F C_p (T - T_{ref})$ (Tank içi homojen karıştığı için reaktör içi sıcaklık ve çıkış sıcaklığı aynıdır ve $T$'ye eşittir)[cite: 7].
+5.
