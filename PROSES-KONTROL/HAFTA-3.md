@@ -72,34 +72,36 @@ flowchart LR
 ## ADIM 2: KRİTİK HESAPLAMA VE SINAV SENARYOLARI
 
 ### Senaryo 1: Diferansiyel Denklem Çözümü ve Kısmi Kesirlere Ayırma Yöntemi
-**Soru:** Başlangıç koşulları $x(0) = 0$ ve $x'(0) = 0$ olan aşağıdaki 2. mertebeden diferansiyel denklemi Laplace dönüşümü ile çözünüz:[cite: 12]
-$$ \frac{d^2x}{dt^2} + 6\frac{dx}{dt} + 8x = 2 $$[cite: 12]
+**Soru:** Başlangıç koşulları $x(0) = 0$ ve $x'(0) = 0$ olan aşağıdaki 2. mertebeden diferansiyel denklemi Laplace dönüşümü ile çözünüz:
+
+$$ \frac{d^2x}{dt^2} + 6\frac{dx}{dt} + 8x = 2 $$
 
 **Mühendislik Çözüm Şablonu:**
 1.  **Her iki tarafın Laplace Dönüşümünü al:**
-    $$ [s^2X(s) - sx(0) - x'(0)] + 6[sX(s) - x(0)] + 8X(s) = \frac{2}{s} $$[cite: 12]
+    $ [s^2X(s) - sx(0) - x'(0)] + 6[sX(s) - x(0)] + 8X(s) = \frac{2}{s} $
 2.  **Başlangıç koşullarını uygula ve düzenle:**
-    $$ X(s)(s^2 + 6s + 8) = \frac{2}{s} \implies X(s) = \frac{2}{s(s+4)(s+2)} $$[cite: 12]
+    $ X(s)(s^2 + 6s + 8) = \frac{2}{s} \implies X(s) = \frac{2}{s(s+4)(s+2)} $
 3.  **Kısmi Kesirlere Ayırma:**
-    $$ \frac{2}{s(s+4)(s+2)} = \frac{A}{s} + \frac{B}{s+4} + \frac{C}{s+2} $$[cite: 12]
-    Payları eşitleyerek: $A = 1/4$, $B = 1/4$, $C = -1/2$ bulunur[cite: 13].
-    $$ X(s) = \frac{1/4}{s} + \frac{1/4}{s+4} - \frac{1/2}{s+2} $$[cite: 13]
+    $ \frac{2}{s(s+4)(s+2)} = \frac{A}{s} + \frac{B}{s+4} + \frac{C}{s+2} $
+    Payları eşitleyerek: $A = 1/4$, $B = 1/4$, $C = -1/2$ bulunur.
+    $ X(s) = \frac{1/4}{s} + \frac{1/4}{s+4} - \frac{1/2}{s+2} $
 4.  **Ters Laplace Dönüşümü:**
-    Standart tablo kuralı: $\mathcal{L}^{-1}\left\{\frac{1}{s+a}\right\} = e^{-at}$[cite: 13]
-    $$ x(t) = \frac{1}{4} + \frac{1}{4}e^{-4t} - \frac{1}{2}e^{-2t} $$[cite: 13]
+    Standart tablo kuralı: $\mathcal{L}^{-1}\{ \frac{1}{s+a} \} = e^{-at}$
+    $ x(t) = \frac{1}{4} + \frac{1}{4}e^{-4t} - \frac{1}{2}e^{-2t} $
 
 ### Senaryo 2: Termodinamik Enerji Denkliği Kurulumu
-**Soru:** Isıtmalı CSTR için genel dinamik (unsteady-state) enerji denklemini kurunuz.[cite: 6, 7]
+**Soru:** Isıtmalı CSTR için genel dinamik (unsteady-state) enerji denklemini kurunuz.
 
 **Mühendislik Çözüm Şablonu:**
-1.  **Korunum Prensibi:** $Giren - Çıkan + \ddot{U}retim = Birikim$[cite: 5]
-2.  **Giren Enerji:** $\rho F C_p (T_i - T_{ref}) + Q$
-3.  **Çıkan Enerji:** $\rho F C_p (T - T_{ref})$[cite: 7]
-4.  **Birikim:** $\frac{d(\rho V C_p T)}{dt}$
+1.  **Korunum Prensibi:** $Giren - Çıkan + \ddot{U}retim = Birikim$
+2.  **Giren Enerji Hızı:** $\rho F C_p (T_i - T_{ref}) + Q$
+3.  **Çıkan Enerji Hızı:** $\rho F C_p (T - T_{ref})$
+4.  **Birikim Hızı:** $\frac{d(\rho V C_p T)}{dt}$
 5.  **Dinamik Matematiksel Model:**
-    $$ \rho V C_p \frac{dT}{dt} = \rho F C_p (T_i - T) + Q $$
+    $ \rho V C_p \frac{dT}{dt} = \rho F C_p (T_i - T) + Q $
 
 ---
+
 
 ## ADIM 3: İNTERAKTİF HIZLI TEKRAR KARTLARI (Flashcards)
 
