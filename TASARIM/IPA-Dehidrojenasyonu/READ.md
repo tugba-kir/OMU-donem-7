@@ -197,7 +197,7 @@ Hesap, PFD, rapor ve hesap föyü tek bir betikle üretilir.
 
 ```bash
 git clone https://github.com/tugba-kir/OMU-donem-7.git
-cd OMU-donem-7/TASARIM/IPA-aseton
+cd OMU-donem-7/TASARIM/IPA-dehidrojenasyonu
 pip install -r requirements.txt
 python src/aseton_plant_design.py
 ```
@@ -205,7 +205,7 @@ python src/aseton_plant_design.py
 Çıktılar çalışma dizinine yazılır. Betik Google Colab'de tek hücre olarak da çalıştırılabilir. Gereksinimler: numpy, scipy, pandas, matplotlib, reportlab, pypdf, pillow. PDF'lerde Times benzeri yazı tipi (FreeSerif) bulunursa kullanılır; bulunmazsa DejaVu Serif'e geçilir ve rapor beş sayfaya sığacak şekilde yazı boyutu otomatik küçültülür.
 
 ```
-IPA-aseton/
+IPA-dehidrojenasyonu/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
