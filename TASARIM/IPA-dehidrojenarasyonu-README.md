@@ -232,8 +232,8 @@ Kod çalışırken ve sonrasında şu kontroller yapılır; sonuçlar [`outputs/
 ## ▶️ Çalıştırma
 
 ```bash
-git clone https://github.com/<kullanıcı-adı>/aseton-plant-design.git
-cd aseton-plant-design
+git clone https://github.com/tugba-kir/OMU-donem-7.git
+cd OMU-donem-7/TASARIM/IPA-aseton
 pip install -r requirements.txt
 python src/aseton_plant_design.py
 ```
@@ -249,7 +249,7 @@ Gereksinimler: `numpy`, `scipy`, `pandas`, `matplotlib`, `reportlab`, `pypdf`, `
 ## 📁 Depo yapısı
 
 ```
-aseton-plant-design/
+OMU-donem-7/TASARIM/IPA-aseton/
 ├── README.md
 ├── LICENSE
 ├── requirements.txt
