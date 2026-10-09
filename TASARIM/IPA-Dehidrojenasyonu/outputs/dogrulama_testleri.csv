@@ -1,0 +1,17 @@
+Test,Model/kod,Kaynak değeri,Sapma_%,Sinir_%,Sonuc
+IPA Psat 297.8 K,5.89 kPa,5.78 kPa,1.969513997442096,2.5,GEÇTİ
+IPA Psat 313.1 K,14.23 kPa,13.94 kPa,2.052374449526684,2.5,GEÇTİ
+IPA Psat 333.1 K,38.78 kPa,38.59 kPa,0.5052955006167981,2.5,GEÇTİ
+IPA Psat 355.4 K,101.17 kPa,101.28 kPa,-0.10383917524543484,2.5,GEÇTİ
+IPA Psat 373.5 K,200.30 kPa,200.10 kPa,0.10185079923377138,2.5,GEÇTİ
+Su Psat 30 °C,4.232 kPa,4.242 kPa,-0.24369210445779332,2.0,GEÇTİ
+Su Psat 100 °C,101.336 kPa,101.325 kPa,0.011087993887892722,2.0,GEÇTİ
+Aseton Psat 56.1 °C (nbp 329.2 K),100.7 kPa,101.3 kPa,-0.5739310885541915,2.0,GEÇTİ
+"Aseton Cp,gaz polinom maks. sapma",0.10 J/mol/K,NIST noktaları,0.1035906046983115,1.5,GEÇTİ
+"IPA Cp,gaz polinom maks. sapma",0.91 J/mol/K,NIST noktaları,0.9139312244936662,1.5,GEÇTİ
+Su buharı Cp 298 K (Shomate uzatma),33.59,33.58 (NIST),0.029331688568690062,1.0,GEÇTİ
+Su Hvap 100 °C (model: 25 °C değeri + Cp),40.88 kJ/mol,40.65,0.5587575785701349,1.5,GEÇTİ
+ΔH dehidrojenasyon 25 °C,+55.50 kJ/mol,+55.23..+55.40 (NIST ters rxn.),0.3616636528029016,1.5,GEÇTİ
+"IPA-su azeotrop T (Wilson, 1.013 bar)",80.41 °C,80.37-80.4 °C,0.007760153666112046,0.5,GEÇTİ
+IPA-su azeotrop bileşimi (Wilson),%89.5 kütle,%87.8 kütle,1.6724213406685173,2.0,GEÇTİ
+"Aseton γ∞(su,25 °C): Wilson / Henry",15.9 / 6.7,Henry (Sander) esas alındı,137.9084815704333,999.0,BİLGİ (Henry esas)
